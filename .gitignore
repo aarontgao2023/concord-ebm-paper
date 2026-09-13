@@ -9,3 +9,5 @@ runs/
 **/fit_records.jsonl
 **/*.jsonl.tmp
 adni/data/
+results/
+figures/

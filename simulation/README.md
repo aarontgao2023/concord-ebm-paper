@@ -7,7 +7,7 @@
 | `scripts/run_v2.py` | resumable runner: append-only fit records, exact decisions under a fixed budget, early stopping, permutation operators (`unrestricted`, `diagnosis`, pair-restricted, `diagnosis_observed_count`) |
 | `scripts/oracle_*.py`, `paired_engine_v2.py` | mechanism diagnostics used in the first protocol |
 | `scripts/ebm_compare.py` | research copy of the packaged procedure |
-| `scripts/analyze_*.py`, `scripts/dev/` | analysis and development scripts; `dev/analyze_method_protocol.py`, `dev/rates_exact_all.py`, `dev/core_rates_exact.py`, `dev/tally_*_exact.py` produce the tables in `../results/` |
+| `scripts/analyze_*.py`, `scripts/dev/` | analysis and development scripts; `dev/analyze_method_protocol.py`, `dev/rates_exact_all.py`, `dev/core_rates_exact.py`, `dev/tally_*_exact.py` produce the result tables (rates with exact decisions, mechanism tables, tallies) |
 | `scripts/test_*.py` | unit tests |
 | `configs/` | every run configuration; `confirmation_protocol_20260908.json` is the first protocol's freeze record |
 | `hpc/` | Slurm array script, snapshot tool, submission/top-up drivers and their audits |
