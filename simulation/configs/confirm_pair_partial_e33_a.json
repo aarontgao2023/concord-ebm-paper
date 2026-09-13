@@ -1,0 +1,95 @@
+{
+  "phase": "confirmation",
+  "configuration_status": "frozen_for_independent_confirmation",
+  "bperm": 599,
+  "alpha": 0.05,
+  "rule": "le",
+  "permutation_batch": 8,
+  "full_p_first_n": 0,
+  "fit_timeout_s": 300,
+  "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
+  "engines": [
+    "repaired"
+  ],
+  "paired_standard": false,
+  "fast_likelihood": true,
+  "failure_policy": "Preserve every planned dataset and unsuccessful fit. Failed or unattempted planned permutations remain unknown within B599; never condition the denominator on successful fits. Do not replace a source-run failure with a successful duplicate from another run.",
+  "execution_implementation": "Use the HPC-validated direct normal-PDF objective with unchanged arithmetic/optimizer. This single-engine run recomputes nuisance for every new label permutation. No mixture reuse across schemes, datasets or permutations.",
+  "freeze_policy": "Immutable source/config snapshot created before any42xxxxxx confirmation data are generated. Earlier41xxxxxx structural-preflight data are excluded. Changes prompted by confirmation outcomes require a new candidate and fresh seeds.",
+  "run_id": "confirm_pair_partial_e33_a",
+  "base_seed": 42200000,
+  "datasets": 1000,
+  "cells": [
+    {
+      "name": "PWR_E33_K27"
+    }
+  ],
+  "schemes": {
+    "diagnosis_pair_e2_e4": {
+      "stratify": "diagnosis",
+      "groups": [
+        0,
+        2
+      ],
+      "tested_pair_index": 1,
+      "require_max": false
+    }
+  },
+  "full_p_seeds": [
+    42200000,
+    42200001,
+    42200002,
+    42200003,
+    42200004,
+    42200005,
+    42200006,
+    42200007,
+    42200008,
+    42200009
+  ],
+  "full_p_policy": "Absolute seeds 42200000 through 42200009 complete the single target B599 budget. Sharing numerical seed values with e2/e4 cells is common-random-number coupling across different DGP cells, not duplicate data or additional independent R within a cell.",
+  "primary_endpoint": "False rejection for the unique true-null e2/e4 local pair when e33 alone has an exact K27 alternative. R1000, alpha/3 local threshold, all planned outcomes and Monte Carlo uncertainty.",
+  "geometry_policy": "Reference nuisance, sample_scale=1, uniform exact K27 relative alternatives; planned and realized inversions must agree.",
+  "required_by_checklist": [
+    "M5_partial_null_three_identities"
+  ],
+  "complete_family": false,
+  "family_policy": "One target local error endpoint only. No family tag is attached, and no complete-family power or global-max result is claimed for this run.",
+  "cohort_definition": {
+    "cohort_id": "partial_null_e33_K27_R1000",
+    "cell": "PWR_E33_K27",
+    "engine": "repaired",
+    "target_scheme": "diagnosis_pair_e2_e4",
+    "target_pair_index": 1,
+    "combined_target_R": 1000,
+    "segments": [
+      {
+        "run_id": "confirm_pair_partial_e33_a",
+        "seed_start": 42200000,
+        "seed_end_inclusive": 42200999,
+        "R": 1000
+      }
+    ]
+  },
+  "replication_accounting": {
+    "datasets_per_cell": 1000,
+    "new_independent_seeds_for_this_cell": 1000,
+    "repeated_data_from_other_cells": false,
+    "shared_seed_policy": "Coupled across alternative-group cells; report each cell separately rather than pooling as independent repetitions."
+  },
+  "budget_accounting": {
+    "full_budget_standard_jobs_without_import": 600000,
+    "permutation_jobs": 599000,
+    "observed_jobs": 1000,
+    "duplicate_observed_jobs": 0
+  },
+  "freeze_utc": "2026-09-08T14:43:39.441270+00:00",
+  "confirmation_namespace": "42xxxxxx",
+  "confirmation_gate_evidence": [
+    "results/v2_dev_estimated_prior_a/estimated_prior_analysis.json",
+    "results/v2_dev_paired_bridge_a/bridge_comparison.json",
+    "results/v2_dev_fast_bridge_a/bridge_comparison.json",
+    "results/v2_fast_likelihood_validation/fast_likelihood_hpc_observed.json",
+    "results/v2_fast_likelihood_validation/fast_likelihood_hpc_permuted.json"
+  ]
+}

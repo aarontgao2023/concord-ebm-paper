@@ -1,0 +1,356 @@
+{
+  "schema_version": "frozen_confirmation_protocol_v2.1",
+  "frozen_utc": "2026-09-08T14:43:39.441270+00:00",
+  "scope": "Simulation-only, conditional global and pairwise ordering inference; realADNI deferred",
+  "configuration_frozen_before_confirmation_data": true,
+  "confirmation_namespace": "42xxxxxx",
+  "retired_preflight_namespace": "41xxxxxx",
+  "seed_preflight_audit": "docs/review_v2/confirmation_seed_preflight_audit.json",
+  "science_checklist": "docs/review_v2/simulation_completion_checklist.json",
+  "stop_policy": "Continue until all required simulations are processed and audited, or weekly account usage reaches90%. Intermediate artifacts JSON/Markdown only. PDF only at final stop condition.",
+  "gates": {
+    "results/v2_dev_estimated_prior_a/estimated_prior_analysis.json": {
+      "sha256": "54dea2d6efd374c156448ea484ad9fcdc6571fccd3507e98a8fe95f05fd2bdbe",
+      "passed": true
+    },
+    "results/v2_dev_paired_bridge_a/bridge_comparison.json": {
+      "sha256": "3f26a1a62689cb819beb8c466db108ee8379fa8c5f261821f2799311943da969",
+      "passed": true
+    },
+    "results/v2_dev_fast_bridge_a/bridge_comparison.json": {
+      "sha256": "165152f0a220f4a621258bb22b4f33111d59de2b197f763b5ad0e2c8cd588238",
+      "passed": true
+    },
+    "results/v2_fast_likelihood_validation/fast_likelihood_hpc_observed.json": {
+      "sha256": "411fc6d449a21fda0fdc56dec5858f755e283de1d74f2cea41644b9c3a0e7a89",
+      "passed": true
+    },
+    "results/v2_fast_likelihood_validation/fast_likelihood_hpc_permuted.json": {
+      "sha256": "cad848c66b5983b1e1d66f58a0f4963e7371b9e1562dec363696e71fb39ead1c",
+      "passed": true
+    }
+  },
+  "tests_at_freeze": {
+    "scientific_suite_passed": 114,
+    "hpc_management_suite_passed": 65,
+    "hpc_full_numerical_equivalence_passed": true
+  },
+  "execution": {
+    "walltime_s": 7200,
+    "runtime_budget_s": 4000,
+    "cpus_per_task": 16,
+    "max_project_cpus": 512,
+    "checkpoint_note": "Time limit may stop a chunk before planned completion; resume the same immutable snapshot and seed/chunk layout. No failure deletion or replacement."
+  },
+  "runs": [
+    {
+      "run_id": "confirm_mechanism_b",
+      "config": "configs/v2/confirm_mechanism_b.json",
+      "config_sha256": "c9c7981972faf4e9a7e86b1eb89c6301d2687253bccd9e061b46356a171b6b48",
+      "base_seed": 42000100,
+      "datasets_per_cell": 200,
+      "cells": [
+        {
+          "name": "IID_H0"
+        },
+        {
+          "name": "REF_H0"
+        },
+        {
+          "name": "REF_H0",
+          "id": "REF_H0_N4",
+          "overrides": {
+            "sample_scale": 4
+          }
+        },
+        {
+          "name": "STAGE_H0",
+          "overrides": {
+            "stage_eta": 1.0
+          }
+        }
+      ],
+      "engines": [
+        "original",
+        "repaired",
+        "oracle_equal_original",
+        "oracle_equal_repaired",
+        "oracle_estimated_original",
+        "oracle_estimated_repaired"
+      ],
+      "bperm": 0,
+      "full_p_first_n": 0,
+      "full_p_seeds": null,
+      "paired_standard": true,
+      "fast_likelihood": true,
+      "snapshot": "runs/v2/snapshots/confirm_mechanism_b",
+      "snapshot_sha256": "4a222315d8b5baae28001a673b5b47c7d571b4ac878efb577a523f318d934733"
+    },
+    {
+      "run_id": "confirm_core_a",
+      "config": "configs/v2/confirm_core_a.json",
+      "config_sha256": "11b716e46bb5055f8b24a3ee5b756683508f66165fe3c361b359b477edf30a52",
+      "base_seed": 42100000,
+      "datasets_per_cell": 1000,
+      "cells": [
+        {
+          "name": "IID_H0"
+        },
+        {
+          "name": "REF_H0"
+        }
+      ],
+      "engines": [
+        "original",
+        "repaired"
+      ],
+      "bperm": 599,
+      "full_p_first_n": 100,
+      "full_p_seeds": null,
+      "paired_standard": true,
+      "fast_likelihood": true,
+      "snapshot": "runs/v2/snapshots/confirm_core_a",
+      "snapshot_sha256": "e4701a864230fbc6faf64709defb4dec5fa5a3d07ac3625b95cc36cb06847464"
+    },
+    {
+      "run_id": "confirm_stage_a",
+      "config": "configs/v2/confirm_stage_a.json",
+      "config_sha256": "d5b1d08322b8fe6e5ace3b0abaf9780354744e400bfa3266c2389bb2d4a81d92",
+      "base_seed": 42100000,
+      "datasets_per_cell": 1000,
+      "cells": [
+        {
+          "name": "STAGE_H0",
+          "overrides": {
+            "stage_eta": 1.0
+          }
+        }
+      ],
+      "engines": [
+        "repaired"
+      ],
+      "bperm": 599,
+      "full_p_first_n": 10,
+      "full_p_seeds": null,
+      "paired_standard": false,
+      "fast_likelihood": true,
+      "snapshot": "runs/v2/snapshots/confirm_stage_a",
+      "snapshot_sha256": "64dd4730cbcda4049bc956f5d6208fa9fec8f394b2e701fe33718e2b8677dda1"
+    },
+    {
+      "run_id": "confirm_power_global_a",
+      "config": "configs/v2/confirm_power_global_a.json",
+      "config_sha256": "8bc7fb417bc94e7e5c694122abb71d9e3ba610822c969a9b1b3664585be1eedb",
+      "base_seed": 42200000,
+      "datasets_per_cell": 500,
+      "cells": [
+        {
+          "name": "PWR_E2_K27"
+        },
+        {
+          "name": "PWR_E4_K27"
+        }
+      ],
+      "engines": [
+        "repaired"
+      ],
+      "bperm": 599,
+      "full_p_first_n": 10,
+      "full_p_seeds": null,
+      "paired_standard": false,
+      "fast_likelihood": true,
+      "snapshot": "runs/v2/snapshots/confirm_power_global_a",
+      "snapshot_sha256": "590d47752d16117ff545e0ad1c75f4ac4912dfe21061faf49392356d4f349aee"
+    },
+    {
+      "run_id": "confirm_pair_complete_ref_a",
+      "config": "configs/v2/confirm_pair_complete_ref_a.json",
+      "config_sha256": "c8f97c11e0ffee91d27445ea9b5de7bd74184fc76d76dec46fa01113f3db809f",
+      "base_seed": 42100000,
+      "datasets_per_cell": 1000,
+      "cells": [
+        {
+          "name": "REF_H0"
+        }
+      ],
+      "engines": [
+        "repaired"
+      ],
+      "bperm": 599,
+      "full_p_first_n": 0,
+      "full_p_seeds": [
+        42100000,
+        42100001,
+        42100002,
+        42100003,
+        42100004,
+        42100005,
+        42100006,
+        42100007,
+        42100008,
+        42100009
+      ],
+      "paired_standard": false,
+      "fast_likelihood": true,
+      "snapshot": "runs/v2/snapshots/confirm_pair_complete_ref_a",
+      "snapshot_sha256": "e5d909b7707d32f2e7509838670eb8a41ba4e146ed004b4499d31b44350886f3"
+    },
+    {
+      "run_id": "confirm_pair_power_k27_a",
+      "config": "configs/v2/confirm_pair_power_k27_a.json",
+      "config_sha256": "696fdc7592a7a22ccc9999a95fc5065352229d3ba75612d334d128e53b43c1f6",
+      "base_seed": 42200000,
+      "datasets_per_cell": 500,
+      "cells": [
+        {
+          "name": "PWR_E2_K27"
+        },
+        {
+          "name": "PWR_E4_K27"
+        }
+      ],
+      "engines": [
+        "repaired"
+      ],
+      "bperm": 599,
+      "full_p_first_n": 0,
+      "full_p_seeds": [
+        42200000,
+        42200001,
+        42200002,
+        42200003,
+        42200004,
+        42200005,
+        42200006,
+        42200007,
+        42200008,
+        42200009
+      ],
+      "paired_standard": false,
+      "fast_likelihood": true,
+      "snapshot": "runs/v2/snapshots/confirm_pair_power_k27_a",
+      "snapshot_sha256": "a9297e4fe381abc324bcb80ab02c53e9ec1751faf133c1095da686d92a9c8113"
+    },
+    {
+      "run_id": "confirm_pair_partial_e2_topup_a",
+      "config": "configs/v2/confirm_pair_partial_e2_topup_a.json",
+      "config_sha256": "b964bc198576e22558ca5a5d1954a45e1ee5bdf380d0e4b2a705d493e991c73b",
+      "base_seed": 42200500,
+      "datasets_per_cell": 500,
+      "cells": [
+        {
+          "name": "PWR_E2_K27"
+        }
+      ],
+      "engines": [
+        "repaired"
+      ],
+      "bperm": 599,
+      "full_p_first_n": 0,
+      "full_p_seeds": [],
+      "paired_standard": false,
+      "fast_likelihood": true,
+      "snapshot": "runs/v2/snapshots/confirm_pair_partial_e2_topup_a",
+      "snapshot_sha256": "4e813cd51fc094dcf1be35fa35d40a7c5ba7f8e0a592dd9ae66674f239393138"
+    },
+    {
+      "run_id": "confirm_pair_partial_e4_topup_a",
+      "config": "configs/v2/confirm_pair_partial_e4_topup_a.json",
+      "config_sha256": "58895277b39e474b96ea0333b94fb1b09309894129a8b04e0db9328f91403f81",
+      "base_seed": 42200500,
+      "datasets_per_cell": 500,
+      "cells": [
+        {
+          "name": "PWR_E4_K27"
+        }
+      ],
+      "engines": [
+        "repaired"
+      ],
+      "bperm": 599,
+      "full_p_first_n": 0,
+      "full_p_seeds": [],
+      "paired_standard": false,
+      "fast_likelihood": true,
+      "snapshot": "runs/v2/snapshots/confirm_pair_partial_e4_topup_a",
+      "snapshot_sha256": "8a1ca0c56df15472a1392d43a9df6fa986fb900715d174fa7916692523a7225b"
+    },
+    {
+      "run_id": "confirm_pair_partial_e33_a",
+      "config": "configs/v2/confirm_pair_partial_e33_a.json",
+      "config_sha256": "7ed869eae99ec985927ae215f18c692d7c57c15ddb3e72d5d6c9c03cce6a66d2",
+      "base_seed": 42200000,
+      "datasets_per_cell": 1000,
+      "cells": [
+        {
+          "name": "PWR_E33_K27"
+        }
+      ],
+      "engines": [
+        "repaired"
+      ],
+      "bperm": 599,
+      "full_p_first_n": 0,
+      "full_p_seeds": [
+        42200000,
+        42200001,
+        42200002,
+        42200003,
+        42200004,
+        42200005,
+        42200006,
+        42200007,
+        42200008,
+        42200009
+      ],
+      "paired_standard": false,
+      "fast_likelihood": true,
+      "snapshot": "runs/v2/snapshots/confirm_pair_partial_e33_a",
+      "snapshot_sha256": "57bb259d28fdd02a83d3ef9a0c383ec151320deb9743b3153ccc442d3aafe76b"
+    },
+    {
+      "run_id": "confirm_power_global_k14_k55_a",
+      "config": "configs/v2/confirm_power_global_k14_k55_a.json",
+      "config_sha256": "6c59b0b2810277590869e39989464ba4066db9c7d713c7f7ed0f4652f7c9ed8c",
+      "base_seed": 42200000,
+      "datasets_per_cell": 500,
+      "cells": [
+        {
+          "name": "PWR_E2_K14"
+        },
+        {
+          "name": "PWR_E4_K14"
+        },
+        {
+          "name": "PWR_E2_K55"
+        },
+        {
+          "name": "PWR_E4_K55"
+        }
+      ],
+      "engines": [
+        "repaired"
+      ],
+      "bperm": 599,
+      "full_p_first_n": 0,
+      "full_p_seeds": [
+        42200000,
+        42200001,
+        42200002,
+        42200003,
+        42200004,
+        42200005,
+        42200006,
+        42200007,
+        42200008,
+        42200009
+      ],
+      "paired_standard": false,
+      "fast_likelihood": true,
+      "snapshot": "runs/v2/snapshots/confirm_power_global_k14_k55_a",
+      "snapshot_sha256": "82985238d18c9ef324ed3f0dca124a514d4c71defd4f48e121f746b4fb587439"
+    }
+  ],
+  "completion_status": "frozen_not_yet_submitted",
+  "optional_extensions": "E1\u2013E8 not selected; no associated generality claims."
+}

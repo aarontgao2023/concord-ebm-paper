@@ -1,0 +1,160 @@
+{
+ "phase": "confirmation",
+ "alpha": 0.05,
+ "rule": "le",
+ "permutation_batch": 8,
+ "fit_timeout_s": 600,
+ "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
+ "fast_likelihood": true,
+ "paired_standard": false,
+ "run_id": "method_mechanism_a",
+ "base_seed": 53000000,
+ "datasets": 1000,
+ "engines": [
+  "repaired",
+  "shared",
+  "invariant_min",
+  "invariant_pooled"
+ ],
+ "cells": [
+  {
+   "id": "IID_S",
+   "name": "IID_H0",
+   "overrides": {
+    "fixed_base_order": [
+     5,
+     9,
+     1,
+     12,
+     11,
+     10,
+     3,
+     8,
+     13,
+     0,
+     6,
+     7,
+     2,
+     4
+    ]
+   }
+  },
+  {
+   "id": "REF_S",
+   "name": "REF_H0",
+   "overrides": {
+    "fixed_base_order": [
+     5,
+     9,
+     1,
+     12,
+     11,
+     10,
+     3,
+     8,
+     13,
+     0,
+     6,
+     7,
+     2,
+     4
+    ]
+   }
+  },
+  {
+   "id": "BAL_S",
+   "name": "BALANCED_H0",
+   "overrides": {
+    "fixed_base_order": [
+     5,
+     9,
+     1,
+     12,
+     11,
+     10,
+     3,
+     8,
+     13,
+     0,
+     6,
+     7,
+     2,
+     4
+    ]
+   }
+  },
+  {
+   "id": "IID_S_N4",
+   "name": "IID_H0",
+   "overrides": {
+    "fixed_base_order": [
+     5,
+     9,
+     1,
+     12,
+     11,
+     10,
+     3,
+     8,
+     13,
+     0,
+     6,
+     7,
+     2,
+     4
+    ],
+    "sample_scale": 4
+   }
+  },
+  {
+   "id": "REF_S_N4",
+   "name": "REF_H0",
+   "overrides": {
+    "fixed_base_order": [
+     5,
+     9,
+     1,
+     12,
+     11,
+     10,
+     3,
+     8,
+     13,
+     0,
+     6,
+     7,
+     2,
+     4
+    ],
+    "sample_scale": 4
+   }
+  },
+  {
+   "id": "BAL_S_N4",
+   "name": "BALANCED_H0",
+   "overrides": {
+    "fixed_base_order": [
+     5,
+     9,
+     1,
+     12,
+     11,
+     10,
+     3,
+     8,
+     13,
+     0,
+     6,
+     7,
+     2,
+     4
+    ],
+    "sample_scale": 4
+   }
+  }
+ ],
+ "schemes": {},
+ "bperm": 0,
+ "full_p_first_n": 0,
+ "purpose": "Second confirmation protocol, frozen 2026-09-12: composition-dependent estimation target under a fixed true ordering, standard vs pooled-mixture vs composition-invariant estimators; no permutations. Fresh seeds 53.0M, disjoint from development (31.xM) and the first protocol (42.xM)."
+}

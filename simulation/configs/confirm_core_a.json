@@ -1,0 +1,54 @@
+{
+  "phase": "confirmation",
+  "bperm": 599,
+  "alpha": 0.05,
+  "rule": "le",
+  "permutation_batch": 8,
+  "full_p_first_n": 100,
+  "fit_timeout_s": 300,
+  "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
+  "full_p_policy": "The same first100 of1000 seeds in each cell and each engine/scheme complete allB599, selected before confirmation outcomes. Confirm mean p-shift using per-dataset averages of the three matched pair differences D minus U and seed-level Monte Carlo uncertainty. Per-pair and global-max p-values are separate. This sample does not establish precise tail probabilities, B convergence, equivalence, or noninferiority.",
+  "failure_policy": "Preserve all planned datasets and unsuccessful fits. Unknown planned outcomes may yield exact decisions via fixed-budget bounds; never change denominator to successful fits.",
+  "run_id": "confirm_core_a",
+  "base_seed": 42100000,
+  "datasets": 1000,
+  "engines": [
+    "original",
+    "repaired"
+  ],
+  "paired_standard": true,
+  "cells": [
+    {
+      "name": "IID_H0"
+    },
+    {
+      "name": "REF_H0"
+    }
+  ],
+  "schemes": {
+    "unrestricted": {
+      "stratify": "none",
+      "require_max": true
+    },
+    "diagnosis": {
+      "stratify": "diagnosis",
+      "require_max": true
+    }
+  },
+  "primary_endpoint": "REF repaired unrestricted-minus-diagnosis complete-null Bonferroni FWER paired difference; IID control and original/repaired sensitivity. Global-max error is separately reported. Pointwise Monte Carlo intervals, no equivalence claim from inclusion of .05.",
+  "paired_total_timeout_policy": "Shared original/repaired job total budget is twice the single-fit timeout. Preserve any completed first result on abort.",
+  "secondary_p_endpoint": "Mean over100 independent dataset-level averages of p_D minus p_U across the three pairs, separately by cell and engine; paired bootstrap at dataset level, not300 flattened p-values.",
+  "fast_likelihood": true,
+  "execution_implementation": "Direct normal-PDF objective changes only distribution-object construction. Enable after HPC full optimizer/mixture/output exact-equivalence checks and same-seed B3 batch bridge; original/repaired share mixture only within a single identical-input job.",
+  "configuration_status": "frozen_for_independent_confirmation",
+  "freeze_utc": "2026-09-08T14:43:39.441270+00:00",
+  "freeze_policy": "Immutable source/config snapshot created before any42xxxxxx confirmation data are generated. Earlier41xxxxxx structural-preflight data are excluded. Changes prompted by confirmation outcomes require a new candidate and fresh seeds.",
+  "confirmation_namespace": "42xxxxxx",
+  "confirmation_gate_evidence": [
+    "results/v2_dev_estimated_prior_a/estimated_prior_analysis.json",
+    "results/v2_dev_paired_bridge_a/bridge_comparison.json",
+    "results/v2_dev_fast_bridge_a/bridge_comparison.json",
+    "results/v2_fast_likelihood_validation/fast_likelihood_hpc_observed.json",
+    "results/v2_fast_likelihood_validation/fast_likelihood_hpc_permuted.json"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "run_id": "dev_calibration_a", "phase": "development", "base_seed": 31000200,
+  "datasets": 8, "engines": ["original", "repaired"],
+  "cells": [{"name":"IID_H0"},{"name":"REF_H0"},{"name":"STAGE_H0","overrides":{"stage_eta":1.0}}],
+  "schemes": {
+    "unrestricted": {"stratify":"none", "require_max":true},
+    "diagnosis": {"stratify":"diagnosis", "require_max":true}
+  },
+  "bperm":599, "alpha":0.05, "rule":"le", "permutation_batch":8,
+  "full_p_first_n":0, "fit_timeout_s":300,
+  "stop_file":"/N/slate/tg11/ebmcal_v2/STOP",
+  "purpose":"Fixed development throughput and end-to-end null pilot. Exact fixed-B decision bounds for pair and max endpoints. Not a precise calibration assessment; no p-distribution claims from completion-selected rows."
+}

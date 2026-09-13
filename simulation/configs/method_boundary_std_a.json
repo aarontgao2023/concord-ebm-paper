@@ -1,0 +1,40 @@
+{
+ "phase": "confirmation",
+ "alpha": 0.05,
+ "rule": "le",
+ "permutation_batch": 8,
+ "fit_timeout_s": 600,
+ "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
+ "fast_likelihood": true,
+ "paired_standard": false,
+ "run_id": "method_boundary_std_a",
+ "base_seed": 53300000,
+ "datasets": 500,
+ "engines": [
+  "repaired"
+ ],
+ "cells": [
+  {
+   "name": "PDF_H0"
+  },
+  {
+   "name": "MISS_CSF_H0"
+  },
+  {
+   "name": "MISS_ALL_H0"
+  }
+ ],
+ "schemes": {
+  "unrestricted": {
+   "stratify": "none",
+   "require_max": true
+  },
+  "diagnosis": {
+   "stratify": "diagnosis",
+   "require_max": true
+  }
+ },
+ "bperm": 599,
+ "full_p_first_n": 10,
+ "purpose": "Second confirmation protocol: the standard estimator on the three heterogeneity cells under the frozen rule, same datasets as method_boundary_a (seeds 53.3M), replacing the development-rule numbers of dev_heterogeneity_a."
+}

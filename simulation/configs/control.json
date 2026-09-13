@@ -1,0 +1,65 @@
+{
+  "version_target": "v2",
+  "status": "independent_confirmation_running",
+  "simulation_only": true,
+  "save_and_pause_at_weekly_used_percent": 90,
+  "weekly_usage_start_percent": 4,
+  "stop_file": "runs/v2/STOP",
+  "development_seed_start": 31000000,
+  "confirmation_seed_start": 42000000,
+  "confirmation_policy": "Freeze source/config before independent confirmation. Changes after confirmation results require a new named candidate and fresh seeds.",
+  "hpc_host": "quartz.uits.iu.edu",
+  "control_path": "/private/tmp/phase-test-hpc-work.pIJWoE/control",
+  "connection_record": "/Users/tianchuangao/method/phase-test/runs/hpc/connection.json",
+  "remote_project_root": "/N/slate/tg11/ebmcal_v2",
+  "shared_master_policy": "Reuse only. Never close, reconfigure, or authenticate through the other task's master. A failing proxy prevents fallback authentication.",
+  "max_concurrent_hpc_tasks": 64,
+  "cpus_per_task": 16,
+  "mem_per_task": "12G",
+  "min_local_free_gb": 10,
+  "no_reset_or_credit_purchase": true,
+  "resource_adjustment": "Current project cap1024 CPUs, all-user submitted-slot cap900, at most16 new array members per receipt. Eight exact single-engine snapshots may use validated1h signal policy; core/mechanism retain2h. Strict expanded sacct evidence releases individual terminal members for exact continuation. Original scientific resource plan512 is historical and immutable.",
+  "max_project_cpus": 1024,
+  "development_queue_caps": {
+    "dev_calibration_a": {
+      "tasks": 8,
+      "cpus_each": 16
+    },
+    "dev_estimated_prior_a": {
+      "tasks": 4,
+      "cpus_each": 16
+    },
+    "dev_paired_bridge_a": {
+      "tasks": 4,
+      "cpus_each": 8
+    },
+    "paired_validation": {
+      "tasks": 1,
+      "cpus_each": 1
+    },
+    "fast_likelihood_validation": {
+      "tasks": 1,
+      "cpus_each": 1
+    },
+    "dev_fast_bridge_a": {
+      "tasks": 2,
+      "cpus_each": 8
+    }
+  },
+  "weekly_used_latest_percent": 65,
+  "user_stop_policy": "Continue iterative simulation work until the agreed simulation completion criteria are met or weekly usage reaches 90%. Intermediate artifacts are JSON/Markdown only. Produce final PDF only at either stop condition.",
+  "pdf_policy": "Existing working PDF retained; no further layout/export effort until final stop condition.",
+  "confirmation_resource_plan": {
+    "max_project_cpus": 512,
+    "cpus_per_task": 16,
+    "max_array_tasks": 1000,
+    "evidence": "2026-09-08 read-only scheduler check: general has11264 total CPUs,4147 idle; r00579 association showed no explicit CPU/job limit. Historical guide used1024 CPUs. Increase only after development checks; scheduler remains authoritative."
+  },
+  "retired_confirmation_preflight_namespace": "41xxxxxx",
+  "current_campaign_revision": "control/campaign_versions/confirmation_20260908_active_only/campaign.json",
+  "remote_authoritative_ledger": "/N/slate/tg11/ebmcal_v2/control/submission_ledger.json",
+  "scheduler_max_submit_per_user_verified": 1000,
+  "planned_all_user_job_cap": 900,
+  "weekly_usage_observed_utc": "2026-09-08T18:28:04Z",
+  "execution_resource_amendment": "runs/v2/campaign_versions/confirmation_20260908_active_only/execution_amendment.json"
+}

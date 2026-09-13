@@ -1,0 +1,41 @@
+{
+ "phase": "development",
+ "alpha": 0.05,
+ "rule": "le",
+ "permutation_batch": 8,
+ "fit_timeout_s": 600,
+ "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
+ "fast_likelihood": true,
+ "paired_standard": false,
+ "run_id": "method_smoke2",
+ "base_seed": 31800001,
+ "datasets": 1,
+ "engines": [
+  "invariant_min",
+  "repaired"
+ ],
+ "cells": [
+  {
+   "name": "MISS_ALL_H0"
+  }
+ ],
+ "schemes": {
+  "diagnosis_observed_count": {
+   "stratify": "diagnosis_observed_count",
+   "require_max": true
+  },
+  "diagnosis_pair_e2_e4": {
+   "stratify": "diagnosis",
+   "groups": [
+    0,
+    2
+   ],
+   "tested_pair_index": 1,
+   "require_max": false,
+   "family": "diagnosis_within_pair_bonferroni3"
+  }
+ },
+ "bperm": 3,
+ "full_p_first_n": 1,
+ "purpose": "smoke"
+}

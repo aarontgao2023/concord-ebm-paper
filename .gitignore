@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+*.log
+# raw per-fit records and run directories are archived off-repository
+runs/
+**/rows.jsonl
+**/fit_records.jsonl
+**/*.jsonl.tmp
+adni/data/

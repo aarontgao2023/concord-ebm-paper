@@ -1,0 +1,56 @@
+{
+ "phase": "development",
+ "alpha": 0.05,
+ "rule": "le",
+ "permutation_batch": 8,
+ "fit_timeout_s": 600,
+ "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
+ "fast_likelihood": true,
+ "paired_standard": false,
+ "run_id": "method_smoke",
+ "base_seed": 31800000,
+ "datasets": 1,
+ "engines": [
+  "repaired",
+  "shared",
+  "invariant_min",
+  "invariant_pooled"
+ ],
+ "cells": [
+  {
+   "id": "REF_S",
+   "name": "REF_H0",
+   "overrides": {
+    "fixed_base_order": [
+     5,
+     9,
+     1,
+     12,
+     11,
+     10,
+     3,
+     8,
+     13,
+     0,
+     6,
+     7,
+     2,
+     4
+    ]
+   }
+  }
+ ],
+ "schemes": {
+  "unrestricted": {
+   "stratify": "none",
+   "require_max": true
+  },
+  "diagnosis": {
+   "stratify": "diagnosis",
+   "require_max": true
+  }
+ },
+ "bperm": 3,
+ "full_p_first_n": 1,
+ "purpose": "smoke"
+}

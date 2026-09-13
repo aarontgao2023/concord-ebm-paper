@@ -1,0 +1,62 @@
+{
+ "phase": "confirmation",
+ "alpha": 0.05,
+ "rule": "le",
+ "permutation_batch": 8,
+ "fit_timeout_s": 600,
+ "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
+ "fast_likelihood": true,
+ "paired_standard": false,
+ "run_id": "method_pair_partial_a",
+ "base_seed": 53200000,
+ "datasets": 500,
+ "engines": [
+  "invariant_min"
+ ],
+ "cells": [
+  {
+   "name": "PWR_E2_K27"
+  },
+  {
+   "name": "PWR_E4_K27"
+  },
+  {
+   "name": "PWR_E33_K27"
+  }
+ ],
+ "schemes": {
+  "diagnosis_pair_e2_e33": {
+   "stratify": "diagnosis",
+   "groups": [
+    0,
+    1
+   ],
+   "tested_pair_index": 0,
+   "require_max": false,
+   "family": "diagnosis_within_pair_bonferroni3"
+  },
+  "diagnosis_pair_e2_e4": {
+   "stratify": "diagnosis",
+   "groups": [
+    0,
+    2
+   ],
+   "tested_pair_index": 1,
+   "require_max": false,
+   "family": "diagnosis_within_pair_bonferroni3"
+  },
+  "diagnosis_pair_e33_e4": {
+   "stratify": "diagnosis",
+   "groups": [
+    1,
+    2
+   ],
+   "tested_pair_index": 2,
+   "require_max": false,
+   "family": "diagnosis_within_pair_bonferroni3"
+  }
+ },
+ "bperm": 599,
+ "full_p_first_n": 0,
+ "purpose": "Second confirmation protocol: strong control (true-null pair with a third group under a K=27 alternative) and pair power of the composition-invariant estimator; E2/E4 datasets identical to method_power_a (seeds 53.2M)."
+}

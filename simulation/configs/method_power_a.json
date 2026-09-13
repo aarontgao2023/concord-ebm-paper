@@ -1,0 +1,45 @@
+{
+ "phase": "confirmation",
+ "alpha": 0.05,
+ "rule": "le",
+ "permutation_batch": 8,
+ "fit_timeout_s": 600,
+ "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
+ "fast_likelihood": true,
+ "paired_standard": false,
+ "run_id": "method_power_a",
+ "base_seed": 53200000,
+ "datasets": 500,
+ "engines": [
+  "invariant_min"
+ ],
+ "cells": [
+  {
+   "name": "PWR_E2_K14"
+  },
+  {
+   "name": "PWR_E2_K27"
+  },
+  {
+   "name": "PWR_E2_K55"
+  },
+  {
+   "name": "PWR_E4_K14"
+  },
+  {
+   "name": "PWR_E4_K27"
+  },
+  {
+   "name": "PWR_E4_K55"
+  }
+ ],
+ "schemes": {
+  "diagnosis": {
+   "stratify": "diagnosis",
+   "require_max": true
+  }
+ },
+ "bperm": 599,
+ "full_p_first_n": 10,
+ "purpose": "Second confirmation protocol: power of diagnosis-stratified permutation on the composition-invariant estimator against exact-K alternatives in the smallest and largest group; global family and max statistic."
+}

@@ -1,0 +1,56 @@
+{
+ "phase": "confirmation",
+ "alpha": 0.05,
+ "rule": "le",
+ "permutation_batch": 8,
+ "fit_timeout_s": 600,
+ "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
+ "fast_likelihood": true,
+ "paired_standard": false,
+ "run_id": "method_pair_complete_a",
+ "base_seed": 53100000,
+ "datasets": 1000,
+ "engines": [
+  "invariant_min"
+ ],
+ "cells": [
+  {
+   "name": "REF_H0"
+  }
+ ],
+ "schemes": {
+  "diagnosis_pair_e2_e33": {
+   "stratify": "diagnosis",
+   "groups": [
+    0,
+    1
+   ],
+   "tested_pair_index": 0,
+   "require_max": false,
+   "family": "diagnosis_within_pair_bonferroni3"
+  },
+  "diagnosis_pair_e2_e4": {
+   "stratify": "diagnosis",
+   "groups": [
+    0,
+    2
+   ],
+   "tested_pair_index": 1,
+   "require_max": false,
+   "family": "diagnosis_within_pair_bonferroni3"
+  },
+  "diagnosis_pair_e33_e4": {
+   "stratify": "diagnosis",
+   "groups": [
+    1,
+    2
+   ],
+   "tested_pair_index": 2,
+   "require_max": false,
+   "family": "diagnosis_within_pair_bonferroni3"
+  }
+ },
+ "bperm": 599,
+ "full_p_first_n": 0,
+ "purpose": "Second confirmation protocol: pair-restricted (D-pair) test on the composition-invariant estimator under the complete null at the ADNI composition; same datasets (seeds 53.1M) as method_calibration_a so D-all and D-pair are paired."
+}

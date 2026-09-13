@@ -1,0 +1,117 @@
+{
+ "phase": "confirmation",
+ "alpha": 0.05,
+ "rule": "le",
+ "permutation_batch": 8,
+ "fit_timeout_s": 600,
+ "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
+ "fast_likelihood": true,
+ "paired_standard": false,
+ "run_id": "method_saebm_reference_a",
+ "base_seed": 53400000,
+ "datasets": 1000,
+ "engines": [
+  "repaired",
+  "shared",
+  "invariant_min"
+ ],
+ "cells": [
+  {
+   "id": "IID_S_CD",
+   "name": "IID_H0",
+   "overrides": {
+    "fixed_base_order": [
+     5,
+     9,
+     1,
+     12,
+     11,
+     10,
+     3,
+     8,
+     13,
+     0,
+     6,
+     7,
+     2,
+     4
+    ],
+    "missing": false
+   }
+  },
+  {
+   "id": "REF_S_CD",
+   "name": "REF_H0",
+   "overrides": {
+    "fixed_base_order": [
+     5,
+     9,
+     1,
+     12,
+     11,
+     10,
+     3,
+     8,
+     13,
+     0,
+     6,
+     7,
+     2,
+     4
+    ],
+    "missing": false
+   }
+  },
+  {
+   "id": "BAL_S_CD",
+   "name": "BALANCED_H0",
+   "overrides": {
+    "fixed_base_order": [
+     5,
+     9,
+     1,
+     12,
+     11,
+     10,
+     3,
+     8,
+     13,
+     0,
+     6,
+     7,
+     2,
+     4
+    ],
+    "missing": false
+   }
+  },
+  {
+   "id": "REF_S_N4_CD",
+   "name": "REF_H0",
+   "overrides": {
+    "fixed_base_order": [
+     5,
+     9,
+     1,
+     12,
+     11,
+     10,
+     3,
+     8,
+     13,
+     0,
+     6,
+     7,
+     2,
+     4
+    ],
+    "missing": false,
+    "sample_scale": 4
+   }
+  }
+ ],
+ "schemes": {},
+ "bperm": 0,
+ "full_p_first_n": 0,
+ "purpose": "Second confirmation protocol: complete-data (missing=false) fixed-ordering mechanism cells for the standard, pooled-mixture and composition-invariant estimators, matched seed-for-seed to the SA-EBM arm (method_saebm_a, pysaebm conjugate priors, same seeds 53.4M) which requires complete data. No permutations."
+}

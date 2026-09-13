@@ -1,0 +1,35 @@
+{
+ "phase": "confirmation",
+ "alpha": 0.05,
+ "rule": "le",
+ "permutation_batch": 8,
+ "fit_timeout_s": 600,
+ "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
+ "fast_likelihood": true,
+ "paired_standard": false,
+ "run_id": "method_calibration_a",
+ "base_seed": 53100000,
+ "datasets": 1000,
+ "engines": [
+  "shared",
+  "invariant_min"
+ ],
+ "cells": [
+  {
+   "name": "REF_H0"
+  }
+ ],
+ "schemes": {
+  "unrestricted": {
+   "stratify": "none",
+   "require_max": true
+  },
+  "diagnosis": {
+   "stratify": "diagnosis",
+   "require_max": true
+  }
+ },
+ "bperm": 599,
+ "full_p_first_n": 100,
+ "purpose": "Second confirmation protocol: calibration of U-all and D-all under no true difference at the ADNI composition for the pooled-mixture and the composition-invariant (min reference) estimators; frozen rule B=599, inclusive; exact early stopping; first 100 seeds full budget."
+}

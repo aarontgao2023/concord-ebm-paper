@@ -1,0 +1,68 @@
+# Exact frozen-rule decisions (B=599, le; reject determined when G+E+(B-nperm)<=T-1). Synced 2026-09-13 00:0x UTC.
+# First protocol 93.5 % decided (tails still running); second protocol calibration 1994/2000, everything else 100 %.
+cell      engine          scheme         rows | exact: det  fam rate [95%]        max rate | old: det  fam   max
+IID_H0    original        diagnosis      1000 |   999  0.032 [0.023, 0.045]  0.025     |   990  0.023 0.018
+IID_H0    original        unrestricted   1000 |  1000  0.034 [0.024, 0.047]  0.023     |   991  0.025 0.017
+IID_H0    repaired        diagnosis      1000 |  1000  0.031 [0.022, 0.044]  0.029     |   991  0.022 0.023
+IID_H0    repaired        unrestricted   1000 |   999  0.034 [0.024, 0.047]  0.029     |   991  0.026 0.022
+REF_H0    original        diagnosis      1000 |   998  0.035 [0.025, 0.048]  0.026     |   992  0.029 0.017
+REF_H0    original        unrestricted   1000 |   998  0.129 [0.110, 0.152]  0.120     |   968  0.102 0.101
+REF_H0    repaired        diagnosis      1000 |   998  0.029 [0.020, 0.041]  0.030     |   992  0.023 0.021
+REF_H0    repaired        unrestricted   1000 |   998  0.130 [0.111, 0.153]  0.120     |   968  0.103 0.101
+cell      engine          scheme         rows | exact: det  fam rate [95%]        max rate | old: det  fam   max
+STAGE_H0  repaired        diagnosis      1000 |   986  0.042 [0.031, 0.056]  0.037     |   977  0.033 0.016
+STAGE_H0  repaired        oracle_dx_stage 1000 |   991  0.029 [0.020, 0.042]  0.017     |   986  0.024 0.011
+== confirm_pair_complete_ref_a
+cell          engine          scheme                 rows  det  rej  rate [95% CI]         | max: det rate
+REF_H0        repaired        diagnosis_pair_e2_e33  1000  996   12  0.012 [0.007, 0.021] |     -     -
+REF_H0        repaired        diagnosis_pair_e2_e4   1000  994    5  0.005 [0.002, 0.012] |     -     -
+REF_H0        repaired        diagnosis_pair_e33_e4  1000  997   12  0.012 [0.007, 0.021] |     -     -
+== confirm_pair_power_k27_a
+cell          engine          scheme                 rows  det  rej  rate [95% CI]         | max: det rate
+PWR_E2_K27    repaired        diagnosis_pair_e2_e33   500  482   12  0.025 [0.014, 0.043] |     -     -
+PWR_E2_K27    repaired        diagnosis_pair_e2_e4    500  480    3  0.006 [0.002, 0.018] |     -     -
+PWR_E2_K27    repaired        diagnosis_pair_e33_e4   500  491    3  0.006 [0.002, 0.018] |     -     -
+PWR_E4_K27    repaired        diagnosis_pair_e2_e33   500  499    2  0.004 [0.001, 0.014] |     -     -
+PWR_E4_K27    repaired        diagnosis_pair_e2_e4    500  485    3  0.006 [0.002, 0.018] |     -     -
+PWR_E4_K27    repaired        diagnosis_pair_e33_e4   500  451   66  0.146 [0.117, 0.182] |     -     -
+== confirm_power_global_a
+cell          engine          scheme                 rows  det  rej  rate [95% CI]         | max: det rate
+PWR_E2_K27    repaired        diagnosis               500  478   30  0.063 [0.044, 0.088] |   471 0.083
+PWR_E4_K27    repaired        diagnosis               500  457   57  0.125 [0.098, 0.158] |   486 0.043
+== confirm_power_global_k14_k55_a
+cell          engine          scheme                 rows  det  rej  rate [95% CI]         | max: det rate
+PWR_E2_K14    repaired        diagnosis               500  474    3  0.006 [0.002, 0.018] |   464 0.011
+PWR_E2_K55    repaired        diagnosis               500  350   25  0.071 [0.049, 0.103] |   323 0.127
+PWR_E4_K14    repaired        diagnosis               500  479   10  0.021 [0.011, 0.038] |   483 0.014
+PWR_E4_K55    repaired        diagnosis               500  208   50  0.240 [0.187, 0.303] |   328 0.098
+== confirm_pair_partial_e2_topup_a
+cell          engine          scheme                 rows  det  rej  rate [95% CI]         | max: det rate
+PWR_E2_K27    repaired        diagnosis_pair_e33_e4   500  500    8  0.016 [0.008, 0.031] |     -     -
+== confirm_pair_partial_e4_topup_a
+cell          engine          scheme                 rows  det  rej  rate [95% CI]         | max: det rate
+PWR_E4_K27    repaired        diagnosis_pair_e2_e33   500  500    8  0.016 [0.008, 0.031] |     -     -
+== confirm_pair_partial_e33_a
+cell          engine          scheme                 rows  det  rej  rate [95% CI]         | max: det rate
+PWR_E33_K27   repaired        diagnosis_pair_e2_e4   1000 1000   14  0.014 [0.008, 0.023] |     -     -
+== method_calibration_a
+cell          engine          scheme                 rows  det  rej  rate [95% CI]         | max: det rate
+REF_H0        invariant_min   diagnosis              1000  998   42  0.042 [0.031, 0.056] |   998 0.045
+REF_H0        invariant_min   unrestricted           1000  998  107  0.107 [0.090, 0.128] |   996 0.115
+REF_H0        shared          diagnosis              1000 1000   28  0.028 [0.019, 0.040] |   999 0.039
+REF_H0        shared          unrestricted           1000  998  775  0.777 [0.750, 0.801] |   999 0.630
+== method_power_a
+cell          engine          scheme                 rows  det  rej  rate [95% CI]         | max: det rate
+PWR_E2_K14    invariant_min   diagnosis               500  500   36  0.072 [0.052, 0.098] |   500 0.094
+PWR_E2_K27    invariant_min   diagnosis               500  500  107  0.214 [0.180, 0.252] |   500 0.306
+PWR_E2_K55    invariant_min   diagnosis               500  500  309  0.618 [0.575, 0.660] |   500 0.690
+PWR_E4_K14    invariant_min   diagnosis               500  500   95  0.190 [0.158, 0.227] |   500 0.062
+PWR_E4_K27    invariant_min   diagnosis               500  500  287  0.574 [0.530, 0.617] |   500 0.222
+PWR_E4_K55    invariant_min   diagnosis               500  500  484  0.968 [0.949, 0.980] |   500 0.722
+== method_boundary_a
+cell          engine          scheme                 rows  det  rej  rate [95% CI]         | max: det rate
+MISS_ALL_H0   invariant_min   diagnosis               500  500  111  0.222 [0.188, 0.260] |   500 0.180
+MISS_ALL_H0   invariant_min   unrestricted            500  500  211  0.422 [0.379, 0.466] |   500 0.398
+MISS_CSF_H0   invariant_min   diagnosis               500  500   26  0.052 [0.036, 0.075] |   500 0.046
+MISS_CSF_H0   invariant_min   unrestricted            500  500   88  0.176 [0.145, 0.212] |   500 0.144
+PDF_H0        invariant_min   diagnosis               500  500   37  0.074 [0.054, 0.100] |   500 0.052
+PDF_H0        invariant_min   unrestricted            500  500   97  0.194 [0.162, 0.231] |   500 0.142

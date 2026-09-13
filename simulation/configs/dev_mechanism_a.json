@@ -1,0 +1,17 @@
+{
+  "run_id": "dev_mechanism_a",
+  "phase": "development",
+  "base_seed": 31000100,
+  "datasets": 12,
+  "engines": ["original", "repaired", "oracle_equal_original", "oracle_equal_repaired", "oracle_known_original", "oracle_known_repaired"],
+  "cells": [
+    {"name": "IID_H0"},
+    {"name": "REF_H0"},
+    {"name": "REF_H0", "id": "REF_H0_N4", "overrides": {"sample_scale": 4}},
+    {"name": "STAGE_H0", "overrides": {"stage_eta": 1.0}}
+  ],
+  "schemes": {},
+  "fit_timeout_s": 600,
+  "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
+  "purpose": "Development mechanism and throughput pilot. Paired engines share data. Oracle arms are diagnostic only. These seeds are excluded from confirmation."
+}

@@ -1,0 +1,11 @@
+{
+  "run_id":"confirm_mechanism_a", "phase":"confirmation", "base_seed":41000100,
+  "datasets":200,
+  "engines":["original","repaired","oracle_equal_original","oracle_equal_repaired","oracle_known_original","oracle_known_repaired"],
+  "cells":[{"name":"IID_H0"},{"name":"REF_H0"},{"name":"REF_H0","id":"REF_H0_N4","overrides":{"sample_scale":4}},{"name":"STAGE_H0","overrides":{"stage_eta":1.0}}],
+  "schemes":{}, "fit_timeout_s":600,
+  "stop_file":"/N/slate/tg11/ebmcal_v2/STOP",
+  "frozen_decision":"Independent confirmation of paired original/repaired mechanism contrasts at N and 4N. Engine choice and no accuracy-improvement claim do not depend on confirmation outcomes. All 200 prespecified seeds retained, including failures. Oracle arms remain diagnostics.",
+  "primary_mechanism_endpoint":"Per-dataset mean normalized Kendall distance to the three true group orders; compare repaired minus original paired by seed; also retain each group and consensus residuals.",
+  "secondary_endpoints":"Per-group truth error; observed pair distances; optimizer flags; paired N vs 4N recovery. Oracle equal and known prior illustrate objective/initialization effects and are not inference candidates."
+}

@@ -1,0 +1,156 @@
+{
+  "project": "ebmcal_v2",
+  "max_project_cpus": 1024,
+  "max_array_size": 1000,
+  "max_tasks_per_submission": 16,
+  "queue_max_age_s": 60,
+  "runs": [
+    {
+      "run_id": "dev_calibration_a",
+      "snapshot": "/N/slate/tg11/ebmcal_v2/snapshots/dev_calibration_a",
+      "snapshot_sha256": "e5a587f1af8959a0bbf4b6be731cc30dbb494b6fe9fb3c8ff2bfa025894e47ba",
+      "nchunks": 8,
+      "output_root": "/N/slate/tg11/ebmcal_v2/runs/dev_calibration_a",
+      "cpus_per_task": 16,
+      "max_parallel_tasks": 8,
+      "walltime_s": 3600,
+      "priority": 3,
+      "execution_walltime_policy": "frozen_dev_calibration_signal_1h_v1"
+    },
+    {
+      "run_id": "confirm_core_a",
+      "snapshot": "/N/slate/tg11/ebmcal_v2/snapshots/confirm_core_a",
+      "snapshot_sha256": "e4701a864230fbc6faf64709defb4dec5fa5a3d07ac3625b95cc36cb06847464",
+      "nchunks": 500,
+      "output_root": "/N/slate/tg11/ebmcal_v2/runs/confirm_core_a",
+      "cpus_per_task": 16,
+      "max_parallel_tasks": 4,
+      "walltime_s": 7200,
+      "priority": 6
+    },
+    {
+      "run_id": "confirm_stage_a",
+      "snapshot": "/N/slate/tg11/ebmcal_v2/snapshots/confirm_stage_a",
+      "snapshot_sha256": "64dd4730cbcda4049bc956f5d6208fa9fec8f394b2e701fe33718e2b8677dda1",
+      "nchunks": 1000,
+      "output_root": "/N/slate/tg11/ebmcal_v2/runs/confirm_stage_a",
+      "cpus_per_task": 16,
+      "max_parallel_tasks": 4,
+      "walltime_s": 3600,
+      "priority": 7,
+      "execution_walltime_policy": "frozen_single_engine_signal_1h_v1"
+    },
+    {
+      "run_id": "confirm_power_global_a",
+      "snapshot": "/N/slate/tg11/ebmcal_v2/snapshots/confirm_power_global_a",
+      "snapshot_sha256": "590d47752d16117ff545e0ad1c75f4ac4912dfe21061faf49392356d4f349aee",
+      "nchunks": 250,
+      "output_root": "/N/slate/tg11/ebmcal_v2/runs/confirm_power_global_a",
+      "cpus_per_task": 16,
+      "max_parallel_tasks": 4,
+      "walltime_s": 3600,
+      "priority": 30,
+      "execution_walltime_policy": "frozen_single_engine_signal_1h_v1"
+    },
+    {
+      "run_id": "confirm_pair_complete_ref_a",
+      "snapshot": "/N/slate/tg11/ebmcal_v2/snapshots/confirm_pair_complete_ref_a",
+      "snapshot_sha256": "e5d909b7707d32f2e7509838670eb8a41ba4e146ed004b4499d31b44350886f3",
+      "nchunks": 500,
+      "output_root": "/N/slate/tg11/ebmcal_v2/runs/confirm_pair_complete_ref_a",
+      "cpus_per_task": 16,
+      "max_parallel_tasks": 4,
+      "walltime_s": 3600,
+      "priority": 8,
+      "execution_walltime_policy": "frozen_single_engine_signal_1h_v1"
+    },
+    {
+      "run_id": "confirm_pair_power_k27_a",
+      "snapshot": "/N/slate/tg11/ebmcal_v2/snapshots/confirm_pair_power_k27_a",
+      "snapshot_sha256": "a9297e4fe381abc324bcb80ab02c53e9ec1751faf133c1095da686d92a9c8113",
+      "nchunks": 250,
+      "output_root": "/N/slate/tg11/ebmcal_v2/runs/confirm_pair_power_k27_a",
+      "cpus_per_task": 16,
+      "max_parallel_tasks": 4,
+      "walltime_s": 3600,
+      "priority": 9,
+      "execution_walltime_policy": "frozen_single_engine_signal_1h_v1"
+    },
+    {
+      "run_id": "confirm_pair_partial_e2_topup_a",
+      "snapshot": "/N/slate/tg11/ebmcal_v2/snapshots/confirm_pair_partial_e2_topup_a",
+      "snapshot_sha256": "4e813cd51fc094dcf1be35fa35d40a7c5ba7f8e0a592dd9ae66674f239393138",
+      "nchunks": 250,
+      "output_root": "/N/slate/tg11/ebmcal_v2/runs/confirm_pair_partial_e2_topup_a",
+      "cpus_per_task": 16,
+      "max_parallel_tasks": 4,
+      "walltime_s": 3600,
+      "priority": 60,
+      "execution_walltime_policy": "frozen_single_engine_signal_1h_v1"
+    },
+    {
+      "run_id": "confirm_pair_partial_e4_topup_a",
+      "snapshot": "/N/slate/tg11/ebmcal_v2/snapshots/confirm_pair_partial_e4_topup_a",
+      "snapshot_sha256": "8a1ca0c56df15472a1392d43a9df6fa986fb900715d174fa7916692523a7225b",
+      "nchunks": 250,
+      "output_root": "/N/slate/tg11/ebmcal_v2/runs/confirm_pair_partial_e4_topup_a",
+      "cpus_per_task": 16,
+      "max_parallel_tasks": 4,
+      "walltime_s": 3600,
+      "priority": 11,
+      "execution_walltime_policy": "frozen_single_engine_signal_1h_v1"
+    },
+    {
+      "run_id": "confirm_pair_partial_e33_a",
+      "snapshot": "/N/slate/tg11/ebmcal_v2/snapshots/confirm_pair_partial_e33_a",
+      "snapshot_sha256": "57bb259d28fdd02a83d3ef9a0c383ec151320deb9743b3153ccc442d3aafe76b",
+      "nchunks": 500,
+      "output_root": "/N/slate/tg11/ebmcal_v2/runs/confirm_pair_partial_e33_a",
+      "cpus_per_task": 16,
+      "max_parallel_tasks": 4,
+      "walltime_s": 3600,
+      "priority": 12,
+      "execution_walltime_policy": "frozen_single_engine_signal_1h_v1"
+    },
+    {
+      "run_id": "confirm_power_global_k14_k55_a",
+      "snapshot": "/N/slate/tg11/ebmcal_v2/snapshots/confirm_power_global_k14_k55_a",
+      "snapshot_sha256": "82985238d18c9ef324ed3f0dca124a514d4c71defd4f48e121f746b4fb587439",
+      "nchunks": 250,
+      "output_root": "/N/slate/tg11/ebmcal_v2/runs/confirm_power_global_k14_k55_a",
+      "cpus_per_task": 16,
+      "max_parallel_tasks": 4,
+      "walltime_s": 3600,
+      "priority": 13,
+      "execution_walltime_policy": "frozen_single_engine_signal_1h_v1"
+    }
+  ],
+  "max_user_submitted_jobs": 900,
+  "completed_runs_excluded_from_dispatch_only": [
+    {
+      "run_id": "dev_fast_bridge_a",
+      "snapshot_sha256": "77c3bd02c4e5c71322785e99f0662a4b3b356042c901460e951b37263e7fa764",
+      "basis": "Returnedcycle20260908T180309_67b2ccc2 reports every chunk complete; no active queue member. Full scientific protocol/analyses retain this run."
+    },
+    {
+      "run_id": "dev_estimated_prior_a",
+      "snapshot_sha256": "d27534f8965fa45e52ea5ba46ce63304e33d0a1b20f0700f7259892bd48318ed",
+      "basis": "Returnedcycle20260908T180309_67b2ccc2 reports every chunk complete; no active queue member. Full scientific protocol/analyses retain this run."
+    },
+    {
+      "run_id": "dev_paired_bridge_a",
+      "snapshot_sha256": "dcbca52d01f38f5bfa1866a6cafa273d21af672a1bf32d31270809bd65562c58",
+      "basis": "Returnedcycle20260908T180309_67b2ccc2 reports every chunk complete; no active queue member. Full scientific protocol/analyses retain this run."
+    },
+    {
+      "run_id": "dev_mechanism_a",
+      "snapshot_sha256": "f098e4ff9d937df78165d600525b16969fd5736dfc5ec97fe078276a21ef8e18",
+      "basis": "Returnedcycle20260908T180309_67b2ccc2 reports every chunk complete; no active queue member. Full scientific protocol/analyses retain this run."
+    },
+    {
+      "run_id": "confirm_mechanism_b",
+      "snapshot_sha256": "4a222315d8b5baae28001a673b5b47c7d571b4ac878efb577a523f318d934733",
+      "basis": "Returnedcycle20260908T180309_67b2ccc2 reports every chunk complete; no active queue member. Full scientific protocol/analyses retain this run."
+    }
+  ]
+}
