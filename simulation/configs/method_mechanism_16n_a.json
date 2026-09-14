@@ -1,0 +1,69 @@
+{
+ "phase": "confirmation",
+ "alpha": 0.05,
+ "rule": "le",
+ "permutation_batch": 8,
+ "fit_timeout_s": 3600,
+ "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
+ "fast_likelihood": true,
+ "paired_standard": false,
+ "run_id": "method_mechanism_16n_a",
+ "base_seed": 53700000,
+ "datasets": 200,
+ "engines": [
+  "repaired",
+  "invariant_min"
+ ],
+ "cells": [
+  {
+   "id": "REF_S_N16",
+   "name": "REF_H0",
+   "overrides": {
+    "fixed_base_order": [
+     5,
+     9,
+     1,
+     12,
+     11,
+     10,
+     3,
+     8,
+     13,
+     0,
+     6,
+     7,
+     2,
+     4
+    ],
+    "sample_scale": 16
+   }
+  },
+  {
+   "id": "IID_S_N16",
+   "name": "IID_H0",
+   "overrides": {
+    "fixed_base_order": [
+     5,
+     9,
+     1,
+     12,
+     11,
+     10,
+     3,
+     8,
+     13,
+     0,
+     6,
+     7,
+     2,
+     4
+    ],
+    "sample_scale": 16
+   }
+  }
+ ],
+ "schemes": {},
+ "bperm": 0,
+ "full_p_first_n": 0,
+ "purpose": "Review response: does the composition gap persist at 16n (n=15,536)? Standard vs CONCORD, fixed true ordering."
+}

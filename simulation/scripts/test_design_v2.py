@@ -173,3 +173,46 @@ class SimulationTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class MissingModeTests(unittest.TestCase):
+    """Review-response missingness patterns and backward compatibility of the default."""
+
+    def test_default_output_identical_to_frozen_snapshot(self):
+        import importlib.util
+        from pathlib import Path
+        frozen = Path(__file__).resolve().parents[2] / "runs" / "v2" / "snapshots" / "method_boundary_a" / "scripts" / "v2" / "design_v2.py"
+        import sys
+        if not frozen.exists():
+            self.skipTest("frozen snapshot not available in this checkout")
+        spec = importlib.util.spec_from_file_location("design_frozen", frozen)
+        F = importlib.util.module_from_spec(spec); sys.modules["design_frozen"] = F; spec.loader.exec_module(F)
+        for name, seed in (("REF_H0", 53300000), ("MISS_ALL_H0", 53300007), ("PWR_E4_K27", 53200003)):
+            new_df, new_truth = D.simulate(D.resolve(name), seed)
+            old_df, old_truth = F.simulate(F.resolve(name), seed)
+            self.assertEqual(new_truth["manifest"]["data_sha256"], old_truth["manifest"]["data_sha256"])
+            self.assertEqual(new_truth["group_orderings"], old_truth["group_orderings"])
+
+    def test_modes_change_the_pattern_of_the_target_group_only(self):
+        base_df, base = D.simulate(D.resolve("REF_H0"), 53900001)
+        names = list(base["biomarker_names"]); img = [n for n in names if n in ("Hippocampus", "Entorhinal", "MidTemp", "Fusiform", "WholeBrain", "Ventricles", "Precuneus")]
+        csf = [n for n in names if n in ("ABETA", "PTAU", "TAU", "NG", "NFL")]
+        for mode, group in (("modality_swap", "e2"), ("block_csf", "e2"), ("stage_imaging", "e4")):
+            df, truth = D.simulate(D.resolve("REF_H0", missing_mode=mode, missing_group=group), 53900001)
+            self.assertFalse(truth["conditional_exchangeability_by_design"])
+            gi = D.GROUP_CODE[group]; other = df.APOE != gi; target = df.APOE == gi
+            # untouched groups: identical values and missingness
+            pd_testing = df.loc[other, names].fillna(-9).to_numpy()
+            self.assertTrue((pd_testing == base_df.loc[other, names].fillna(-9).to_numpy()).all())
+            if mode == "modality_swap":
+                self.assertLess(df.loc[target, img].notna().mean().mean(), 0.8)
+                self.assertGreater(df.loc[target, csf].notna().mean().mean(), 0.9)
+                self.assertLess(abs(df.loc[target, names].notna().sum(axis=1).mean() - base_df.loc[target, names].notna().sum(axis=1).mean()), 0.6)
+            elif mode == "block_csf":
+                none_csf = df.loc[target, csf].isna().all(axis=1).mean()
+                self.assertGreater(none_csf, 0.3); self.assertLess(none_csf, 0.55)
+            else:
+                stage = np.asarray(truth["latent_stage_fraction"])[target.to_numpy()]
+                avail = df.loc[target, img].notna().mean(axis=1).to_numpy()
+                self.assertLess(np.corrcoef(stage, avail)[0, 1], -0.2)
+

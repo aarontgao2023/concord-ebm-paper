@@ -1,0 +1,56 @@
+{
+ "phase": "confirmation",
+ "alpha": 0.05,
+ "rule": "le",
+ "permutation_batch": 8,
+ "fit_timeout_s": 600,
+ "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
+ "fast_likelihood": true,
+ "paired_standard": false,
+ "run_id": "method_boundary_miss_a",
+ "base_seed": 53300000,
+ "datasets": 500,
+ "engines": [
+  "invariant_min",
+  "repaired"
+ ],
+ "cells": [
+  {
+   "id": "MISS_SWAP_E2",
+   "name": "REF_H0",
+   "overrides": {
+    "missing_mode": "modality_swap",
+    "missing_group": "e2"
+   }
+  },
+  {
+   "id": "MISS_BLOCK_E2",
+   "name": "REF_H0",
+   "overrides": {
+    "missing_mode": "block_csf",
+    "missing_group": "e2"
+   }
+  },
+  {
+   "id": "MISS_STAGE_E4",
+   "name": "REF_H0",
+   "overrides": {
+    "missing_mode": "stage_imaging",
+    "missing_group": "e4"
+   }
+  }
+ ],
+ "schemes": {
+  "diagnosis": {
+   "stratify": "diagnosis",
+   "require_max": true
+  },
+  "diagnosis_observed_count": {
+   "stratify": "diagnosis_observed_count",
+   "require_max": true
+  }
+ },
+ "bperm": 599,
+ "full_p_first_n": 10,
+ "purpose": "Review response: count-preserving missingness counterexamples (modality swap, CSF block missing, stage-dependent imaging availability) under a common true ordering; D-all vs the observed-count repair, CONCORD and standard."
+}

@@ -1,0 +1,54 @@
+{
+ "phase": "confirmation",
+ "alpha": 0.05,
+ "rule": "le",
+ "permutation_batch": 8,
+ "fit_timeout_s": 600,
+ "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
+ "fast_likelihood": true,
+ "paired_standard": false,
+ "run_id": "method_alt_geometry_a",
+ "base_seed": 53800000,
+ "datasets": 500,
+ "engines": [
+  "repaired",
+  "invariant_min"
+ ],
+ "cells": [
+  {
+   "name": "K6_SINGLE_E2"
+  },
+  {
+   "name": "K6_SINGLE_E4"
+  },
+  {
+   "name": "K6_DISJOINT_E2"
+  },
+  {
+   "name": "K6_DISJOINT_E4"
+  },
+  {
+   "id": "K13_SINGLE_E2",
+   "name": "PWR_E2_K13",
+   "overrides": {
+    "geometry": "single_displacement"
+   }
+  },
+  {
+   "id": "K13_SINGLE_E4",
+   "name": "PWR_E4_K13",
+   "overrides": {
+    "geometry": "single_displacement"
+   }
+  }
+ ],
+ "schemes": {
+  "diagnosis": {
+   "stratify": "diagnosis",
+   "require_max": true
+  }
+ },
+ "bperm": 599,
+ "full_p_first_n": 10,
+ "purpose": "Review response: alternatives beyond uniform exact-K inversions -- one event displaced by 6 or 13 positions, six disjoint adjacent swaps; standard vs CONCORD under D-all."
+}

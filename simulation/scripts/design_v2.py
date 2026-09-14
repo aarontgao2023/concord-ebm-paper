@@ -26,7 +26,7 @@ import numpy as np
 import pandas as pd
 
 
-DESIGN_VERSION = "2.0.0"
+DESIGN_VERSION = "2.1.0"
 SOURCE_SHA256 = sha256(Path(__file__).read_bytes()).hexdigest()
 GROUP_ORDER = ("e2", "e33", "e4")
 GROUP_CODE = {name: index for index, name in enumerate(GROUP_ORDER)}
@@ -90,6 +90,9 @@ class DesignConfig:
     missing: bool = True
     missing_stress_eta: float = 0.0
     missing_scope: str = "CSF"           # scope of stress multiplier; baseline is all
+    missing_mode: str = "none"           # review-response counterexamples: modality_swap | block_csf | stage_imaging
+    missing_group: str = "e2"            # group carrying the missing_mode pattern
+    missing_strength: float = 1.0        # scales the pattern (1 = as specified below)
 
     def to_dict(self) -> dict[str, Any]:
         """Return JSON-native fields, including explicit versioning."""
@@ -327,6 +330,12 @@ def _validate_config(cfg: DesignConfig) -> None:
         raise ValueError("missing_stress_eta must be finite and nonnegative")
     if cfg.missing_scope not in {"CSF", "all"}:
         raise ValueError("missing_scope must be CSF or all")
+    if cfg.missing_mode not in {"none", "modality_swap", "block_csf", "stage_imaging"}:
+        raise ValueError("unknown missing_mode")
+    if cfg.missing_group not in GROUP_ORDER:
+        raise ValueError("unknown missing_group")
+    if not 0 <= cfg.missing_strength <= 1:
+        raise ValueError("missing_strength must be between zero and one")
     if not cfg.missing and cfg.missing_stress_eta:
         raise ValueError("missing stress cannot be active when missing=False")
     for bm in cfg.biomarker_names:
@@ -457,6 +466,31 @@ def simulate(cfg: DesignConfig | dict[str, Any], seed: int) -> tuple[pd.DataFram
                 for i, bm in enumerate(bms):
                     if cfg.missing_scope == "all" or bm.modality == "CSF":
                         probabilities[rows, i] = np.clip(bm.p_available * multiplier, 0., 1.)
+    if cfg.missing_mode != "none":
+        # Counterexamples to 'stratify on the number of observed biomarkers': the target group keeps
+        # (about) the same expected count of observed biomarkers but a different pattern.
+        rows_g = groups == GROUP_CODE[cfg.missing_group]
+        s = cfg.missing_strength
+        if cfg.missing_mode == "modality_swap":
+            # imaging availability down (0.99 -> 0.70), every CSF marker up to 0.99: expected count within +0.2
+            for i, bm in enumerate(bms):
+                if bm.modality == "IMG":
+                    probabilities[rows_g, i] = np.clip(bm.p_available - 0.29 * s, 0., 1.)
+                elif bm.modality == "CSF":
+                    probabilities[rows_g, i] = np.clip(bm.p_available + (0.99 - bm.p_available) * s, 0., 1.)
+        elif cfg.missing_mode == "block_csf":
+            # 40 % of the target group has no CSF at all; the rest keep baseline availability
+            # separate deterministic stream so the baseline missingness draw of every other subject is unchanged
+            block_rng = np.random.Generator(np.random.PCG64(children[STREAM_NAMES.index("missingness")].spawn(1)[0]))
+            block = rows_g & (block_rng.random(n) < 0.4 * s)
+            for i, bm in enumerate(bms):
+                if bm.modality == "CSF":
+                    probabilities[block, i] = 0.
+        elif cfg.missing_mode == "stage_imaging":
+            # imaging availability falls with latent stage in the target group only (0.99 -> 0.49 at the last stage)
+            for i, bm in enumerate(bms):
+                if bm.modality == "IMG":
+                    probabilities[rows_g, i] = np.clip(bm.p_available - 0.5 * s * stage_fraction[rows_g], 0., 1.)
     observed = complete.copy()
     observed[rngs["missingness"].random((n, p)) >= probabilities] = np.nan
     df = pd.DataFrame(observed, columns=cfg.biomarker_names)
@@ -489,7 +523,8 @@ def simulate(cfg: DesignConfig | dict[str, Any], seed: int) -> tuple[pd.DataFram
                                     "normalized_distance": inversions / (p * (p - 1) // 2)}
     group_pdf_common = all(component_parameters[g] == component_parameters[GROUP_ORDER[0]] for g in GROUP_ORDER)
     conditional_exchangeability = (not cfg.target_inversions and not cfg.stage_eta
-                                  and group_pdf_common and not cfg.missing_stress_eta)
+                                  and group_pdf_common and not cfg.missing_stress_eta
+                                  and cfg.missing_mode == "none")
     payload = cfg.to_dict()
     config_json = json.dumps(payload, sort_keys=True, separators=(",", ":"), allow_nan=False)
     truth = {

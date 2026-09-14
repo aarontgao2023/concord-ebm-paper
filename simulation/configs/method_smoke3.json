@@ -1,0 +1,52 @@
+{
+ "phase": "development",
+ "alpha": 0.05,
+ "rule": "le",
+ "permutation_batch": 8,
+ "fit_timeout_s": 600,
+ "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
+ "fast_likelihood": true,
+ "paired_standard": false,
+ "run_id": "method_smoke3",
+ "base_seed": 31800002,
+ "datasets": 1,
+ "engines": [
+  "invariant_min",
+  "repaired",
+  "oracle_known_repaired"
+ ],
+ "cells": [
+  {
+   "id": "MISS_SWAP_E2",
+   "name": "REF_H0",
+   "overrides": {
+    "missing_mode": "modality_swap",
+    "missing_group": "e2"
+   }
+  },
+  {
+   "id": "K13_SINGLE_E4",
+   "name": "PWR_E4_K13",
+   "overrides": {
+    "geometry": "single_displacement"
+   }
+  }
+ ],
+ "schemes": {
+  "diagnosis": {
+   "stratify": "diagnosis",
+   "require_max": true
+  },
+  "diagnosis_observed_count": {
+   "stratify": "diagnosis_observed_count",
+   "require_max": true
+  },
+  "oracle_dx_stage": {
+   "stratify": "oracle_dx_stage",
+   "require_max": true
+  }
+ },
+ "bperm": 2,
+ "full_p_first_n": 1,
+ "purpose": "smoke"
+}
