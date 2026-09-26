@@ -1,7 +1,0 @@
-{
-  "run_id":"dev_estimated_prior_a","phase":"development","base_seed":31000100,"datasets":12,
-  "engines":["repaired","oracle_estimated_original","oracle_estimated_repaired"],
-  "cells":[{"name":"IID_H0"},{"name":"REF_H0"},{"name":"REF_H0","id":"REF_H0_N4","overrides":{"sample_scale":4}},{"name":"STAGE_H0","overrides":{"stage_eta":1.0}}],
-  "schemes":{},"fit_timeout_s":600,"stop_file":"/N/slate/tg11/ebmcal_v2/STOP",
-  "purpose":"Follow-up development on the same prespecified development data as mechanism A; these are not new independent datasets. Known component densities with q estimated only from observed group X, no true-order or latent-stage prior. Repaired standard arm is rerun in this run to support within-run paired comparisons and cross-run reproducibility checks."
-}

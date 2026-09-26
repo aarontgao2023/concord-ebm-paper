@@ -1,4 +1,4 @@
-"""Necessary engine checks; run with python -m unittest discover -s scripts/v2.
+"""Necessary engine checks; run with python -m unittest discover -s simulation/scripts.
 
 Requires the pinned pyebm wheel and its scientific dependencies. Tests exercise
 the actual upstream objective and a small complete DEBM fit, not a large study.

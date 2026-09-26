@@ -1,0 +1,15 @@
+event,modality,component_AUC,observation_probability
+ABETA,CSF,0.88,0.735
+PTAU,CSF,0.85,0.735
+TAU,CSF,0.8,0.725
+NG,CSF,0.68,0.275
+NFL,CSF,0.72,0.288
+ADAS13,COG,0.92,0.99
+MMSE,COG,0.86,1.0
+Hippocampus,IMG,0.82,0.99
+Entorhinal,IMG,0.8,0.99
+MidTemp,IMG,0.78,0.99
+Fusiform,IMG,0.76,0.99
+WholeBrain,IMG,0.74,0.99
+Ventricles,IMG,0.72,0.99
+Precuneus,IMG,0.7,0.99

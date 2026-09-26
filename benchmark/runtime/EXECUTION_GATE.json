@@ -1,0 +1,77 @@
+{
+  "formal_launch_approved": true,
+  "engine": "allgroup_original_tolerance",
+  "campaign_sha256": "025a369249b25b41c45d0b90e5c3ffb32b90014202515a85705f819698d4028f",
+  "source_sha256": {
+    "allgroup_engine.py": "5c6b6a2a8e515c5f0ea397398eb36cc939be1d27f0ec5af9150f39d6d7b1d776",
+    "audit_reuse.py": "0f1ddc4fcf3a3f3966e49f4397a78054a91155e4300aed7acb3a9fb191dfcb8a",
+    "robust_design.py": "1905093aefbbf92bb7bcc53241db6e532bfca23e00c31ce129ce0f14cb3e33f6",
+    "run_batch.py": "77d8294e722ea0e573f47edcda005ee6f5a2ea71ef6065e1c8f6a8a45731dab7",
+    "run_dataset.py": "8cde66b8fc46c94bc0bd030f7e0fea7df5226e005ee5a3a0e67cd35257aa3fa9",
+    "vendor/confirm_power_global_a/design_v2.py": "72975519adbf9ac07fe5361b2b5acc134b4d51344e00bd4f26023e20496513e1",
+    "vendor/confirm_power_global_a/run_v2.py": "5334c1c9b85de70af52e81f06292fc98c20bfd55dee16bfd57ea56c944d22926",
+    "vendor/method_alt_geometry_a/design_v2.py": "9a7766dc5890d2df659bc686e7faf748da620a418ac2e3649910039091204427",
+    "vendor/method_alt_geometry_a/run_v2.py": "dae15feabe874d3faf074b18da319ab6148e06a6e2f4faa57a44f6eaa476fc91",
+    "vendor/method_calibration_a/design_v2.py": "72975519adbf9ac07fe5361b2b5acc134b4d51344e00bd4f26023e20496513e1",
+    "vendor/method_calibration_a/run_v2.py": "568f2d59bb49074e2f32f9db39a5814d9012eb8af5061e7c10fe0bfd78454740",
+    "vendor/w3/audit_engine.py": "26081182709e2b491629250ea0313a266ed97451c8dcc840f932910657c8690e",
+    "vendor/w3/run_stop_isolation.py": "3f79f93c2e268f9f31d5bd1fa57941d7232d8551cc1768f24e927625537f0140"
+  },
+  "environment_versions": {
+    "python": "3.12.14",
+    "pyebm": "2.0.3",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.5.2",
+    "statsmodels": "0.14.6"
+  },
+  "resource_limits": {
+    "datasets_per_job": 64,
+    "workers_per_job": 16,
+    "cpus_per_job": 16,
+    "memory_GB_per_job": 32,
+    "wall_hours": 24,
+    "power_array_tasks": 48,
+    "robustness_array_tasks": 64,
+    "max_concurrent_jobs_each": 16,
+    "max_combined_CPUs": 512
+  },
+  "inputs_sha256": "1954bebb0b1e09ff97b2d3487bb6fb90594cf71b6be1d7e29fb708ab82576386",
+  "approval_utc": "2026-09-21T12:54:39.372784+00:00",
+  "scientific_gates": {
+    "strict_reuse_3000datasets": "PASS",
+    "generator_validation": "PASS",
+    "fixed_budget_decision_validation": "PASS",
+    "detailed_bridge_11datasets": "PASS",
+    "independent_lightweight_6datasets": "PASS"
+  },
+  "published_copy": {
+    "note": "source_sha256 was recomputed for the files published in this directory. run_dataset.py, robust_design.py and audit_reuse.py differ from the executed copies only in the directory from which the engine modules are imported (simulation/scripts of this repository instead of vendor/current) and, for audit_reuse.py, in its default output locations. executed_source_sha256 lists the files as they ran; its vendor/current entries are the engine modules that are now loaded from simulation/scripts.",
+    "executed_source_sha256": {
+      "allgroup_engine.py": "5c6b6a2a8e515c5f0ea397398eb36cc939be1d27f0ec5af9150f39d6d7b1d776",
+      "audit_reuse.py": "e7f257e72aba7a49daeed4356c620788ca0cd5fa6d2a542a42f38e5fd66ee217",
+      "robust_design.py": "fb8c3dbff97c0ec53ceff6c97cb954c0b18cec563fdf70db94dde773ee40baac",
+      "run_batch.py": "77d8294e722ea0e573f47edcda005ee6f5a2ea71ef6065e1c8f6a8a45731dab7",
+      "run_dataset.py": "e7dce39f5c265f8cfbcf02d6a6d8a9115df8594953f8e6bc171b1cb8667613d8",
+      "vendor/confirm_power_global_a/design_v2.py": "72975519adbf9ac07fe5361b2b5acc134b4d51344e00bd4f26023e20496513e1",
+      "vendor/confirm_power_global_a/run_v2.py": "5334c1c9b85de70af52e81f06292fc98c20bfd55dee16bfd57ea56c944d22926",
+      "vendor/current/dependency_v2.py": "751db74129e96c1870df17da52abfe250ca48a184360eda066878a29fc4a22e8",
+      "vendor/current/design_v2.py": "9a7766dc5890d2df659bc686e7faf748da620a418ac2e3649910039091204427",
+      "vendor/current/engine_v2.py": "8115fcf3ddebdf7b3c71513ace4919284db8dd512b0743b1812fd0dcc67538c0",
+      "vendor/current/fast_likelihood_v2.py": "e293eae98b6d269dae997100d701ef329dcadae7bf1fd6bae734fa6e608cdd57",
+      "vendor/current/invariant_engine_v2.py": "694c4d23aeb5a51e31921959cdcd2be6ffa86e038b69ad8dc09e4082aa610e12",
+      "vendor/current/kde_engine_v2.py": "459e51d0846391452e57b940bac0e487689fca13e418520720a457ae12c4d7e1",
+      "vendor/current/oracle_engine_v2.py": "f3381301a54ca92fd66d95a148f89e8f6aafa4f5cdc73c41421e7e9dc5f96712",
+      "vendor/current/oracle_estimated_prior_v2.py": "62a1965a4e30e05572e06d5406633970b02885af7571dbbbfcbb04e4a8c5aed2",
+      "vendor/current/paired_engine_v2.py": "797ab4c745544f762de025c95f1f0d4d0d58b787289f140ed48d62df0829c3f5",
+      "vendor/current/run_v2.py": "0d1023e7f93ae9fde5671c40b99834bd6496b12747f361b47bbb94bffe34e1f7",
+      "vendor/method_alt_geometry_a/design_v2.py": "9a7766dc5890d2df659bc686e7faf748da620a418ac2e3649910039091204427",
+      "vendor/method_alt_geometry_a/run_v2.py": "dae15feabe874d3faf074b18da319ab6148e06a6e2f4faa57a44f6eaa476fc91",
+      "vendor/method_calibration_a/design_v2.py": "72975519adbf9ac07fe5361b2b5acc134b4d51344e00bd4f26023e20496513e1",
+      "vendor/method_calibration_a/run_v2.py": "568f2d59bb49074e2f32f9db39a5814d9012eb8af5061e7c10fe0bfd78454740",
+      "vendor/w3/audit_engine.py": "26081182709e2b491629250ea0313a266ed97451c8dcc840f932910657c8690e",
+      "vendor/w3/run_stop_isolation.py": "3f79f93c2e268f9f31d5bd1fa57941d7232d8551cc1768f24e927625537f0140"
+    }
+  }
+}

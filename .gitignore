@@ -1,13 +1,62 @@
+# Python, environments and system files
 __pycache__/
-*.pyc
-.venv/
+*.py[cod]
+.venv*/
 .DS_Store
 *.log
-# raw per-fit records and run directories are archived off-repository
+slurm-*.out
+
+# ---------------------------------------------------------------------------------------------
+# Data guards. No participant-level ADNI or NACC data may be committed. These rules block the
+# cohort folders, the prepared runtime inputs, de-identified tables and draw-index files wherever
+# they appear, and all tabular files except the simulation-only inputs re-included at the end.
+# ---------------------------------------------------------------------------------------------
+ADSP_PHC/
+adsp_phc/
+ADSP-PHC-122024-investigator_NACC/
+09_NACC/
+local_only/
+local_preflight/
+derived/
+prepared/
+inputs/
+*_deid*
+*.npz
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.rds
+*.sav
+*.zip
+*.csv
+*.tsv
+*.jsonl
+
+# ---------------------------------------------------------------------------------------------
+# Run outputs (regenerated from the code, configurations and seeds)
+# ---------------------------------------------------------------------------------------------
 runs/
-**/rows.jsonl
-**/fit_records.jsonl
-**/*.jsonl.tmp
-adni/data/
 results/
-figures/
+snapshots/
+logs/
+STOP
+*.jsonl.tmp
+figures/output/
+figures/source_data/
+
+# ---------------------------------------------------------------------------------------------
+# Committed inputs. Only simulation-only files are re-included here.
+# ---------------------------------------------------------------------------------------------
+# Figure inputs from the simulations and the paired benchmark
+!/figures/inputs/
+!/figures/inputs/simulation/
+!/figures/inputs/simulation/*.csv
+# ADNI and NACC aggregates are placed in figures/inputs/realdata/ by the user and are not committed
+/figures/inputs/realdata/*
+!/figures/inputs/realdata/README.md
+# Earlier simulation results reused by the paired benchmark
+!/benchmark/runtime/inputs/
+!/benchmark/runtime/inputs/historical_reused_rows.jsonl

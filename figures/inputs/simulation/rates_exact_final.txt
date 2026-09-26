@@ -1,0 +1,17 @@
+# Rejections under pairwise within-diagnosis permutation in runs method_pair_complete_a and method_pair_partial_a: output of simulation/scripts/dev/rates_exact_all.py for these two runs (B = 599; a comparison is rejected when (1 + E)/600 <= 0.05/3).
+== method_pair_complete_a
+cell          engine          scheme                 rows  det  rej  rate [95% CI]         | max: det rate
+REF_H0        invariant_min   diagnosis_pair_e2_e33  1000 1000   13  0.013 [0.008, 0.022] |     -     -
+REF_H0        invariant_min   diagnosis_pair_e2_e4   1000 1000   18  0.018 [0.011, 0.028] |     -     -
+REF_H0        invariant_min   diagnosis_pair_e33_e4  1000 1000   20  0.020 [0.013, 0.031] |     -     -
+== method_pair_partial_a
+cell          engine          scheme                 rows  det  rej  rate [95% CI]         | max: det rate
+PWR_E2_K27    invariant_min   diagnosis_pair_e2_e33   500  500   81  0.162 [0.132, 0.197] |     -     -
+PWR_E2_K27    invariant_min   diagnosis_pair_e2_e4    500  500   76  0.152 [0.123, 0.186] |     -     -
+PWR_E2_K27    invariant_min   diagnosis_pair_e33_e4   500  500    2  0.004 [0.001, 0.014] |     -     -
+PWR_E33_K27   invariant_min   diagnosis_pair_e2_e33   500  500   58  0.116 [0.091, 0.147] |     -     -
+PWR_E33_K27   invariant_min   diagnosis_pair_e2_e4    500  500    5  0.010 [0.004, 0.023] |     -     -
+PWR_E33_K27   invariant_min   diagnosis_pair_e33_e4   500  500  276  0.552 [0.508, 0.595] |     -     -
+PWR_E4_K27    invariant_min   diagnosis_pair_e2_e33   500  500   12  0.024 [0.014, 0.041] |     -     -
+PWR_E4_K27    invariant_min   diagnosis_pair_e2_e4    500  500   65  0.130 [0.103, 0.162] |     -     -
+PWR_E4_K27    invariant_min   diagnosis_pair_e33_e4   500  500  283  0.566 [0.522, 0.609] |     -     -

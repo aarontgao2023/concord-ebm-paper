@@ -1,0 +1,25 @@
+{
+ "phase": "confirmation",
+ "alpha": 0.05,
+ "rule": "le",
+ "permutation_batch": 8,
+ "fit_timeout_s": 600,
+ "fast_likelihood": false,
+ "paired_standard": false,
+ "run_id": "method_kde_calibration_a",
+ "base_seed": 53100000,
+ "datasets": 300,
+ "engines": [
+  "kde_gmm"
+ ],
+ "cells": [
+  {"id": "REF_H0_CD", "name": "REF_H0", "overrides": {"missing": false}}
+ ],
+ "schemes": {
+  "unrestricted": {"stratify": "none", "require_max": true},
+  "diagnosis": {"stratify": "diagnosis", "require_max": true}
+ },
+ "bperm": 599,
+ "full_p_first_n": 10,
+ "purpose": "Likelihood EBM fitted in each group (kde_gmm) with different composition, a new random true sequence for each dataset and complete measurements (REF_H0_CD); unrestricted and within-diagnosis permutation. The seeds are the first 300 of method_calibration_a, so the datasets are complete-data versions of those datasets. Used in Fig. 2b (event-position shifts); the permutation results are not shown in the paper."
+}

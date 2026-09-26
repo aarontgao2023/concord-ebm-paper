@@ -1,6 +1,6 @@
 """Lightweight, independently checked invariants for the new simulation design.
 
-Run: python -m unittest discover -s scripts/v2 -p test_design_v2.py
+Run: python -m unittest discover -s simulation/scripts -p test_design_v2.py
 No DEBM fits, SciPy, downloads, or legacy results are required.
 """
 
@@ -171,20 +171,20 @@ class SimulationTests(unittest.TestCase):
             D.simulate(D.resolve("REF_H0"), -1)
 
 
-if __name__ == "__main__":
-    unittest.main()
-
 
 class MissingModeTests(unittest.TestCase):
-    """Review-response missingness patterns and backward compatibility of the default."""
+    """Missingness patterns (missing_mode) and backward compatibility of the default."""
 
     def test_default_output_identical_to_frozen_snapshot(self):
         import importlib.util
         from pathlib import Path
-        frozen = Path(__file__).resolve().parents[2] / "runs" / "v2" / "snapshots" / "method_boundary_a" / "scripts" / "v2" / "design_v2.py"
+        import os
+        # The earlier design_v2.py (version 2.0.0) that ran in method_calibration_a, vendored in
+        # benchmark/runtime/vendor/; CONCORD_FROZEN_DESIGN can point to another copy.
+        frozen = Path(os.environ.get("CONCORD_FROZEN_DESIGN", Path(__file__).resolve().parents[2] / "benchmark" / "runtime" / "vendor" / "method_calibration_a" / "design_v2.py"))
         import sys
         if not frozen.exists():
-            self.skipTest("frozen snapshot not available in this checkout")
+            self.skipTest("earlier design_v2.py not available; set CONCORD_FROZEN_DESIGN")
         spec = importlib.util.spec_from_file_location("design_frozen", frozen)
         F = importlib.util.module_from_spec(spec); sys.modules["design_frozen"] = F; spec.loader.exec_module(F)
         for name, seed in (("REF_H0", 53300000), ("MISS_ALL_H0", 53300007), ("PWR_E4_K27", 53200003)):
@@ -216,3 +216,6 @@ class MissingModeTests(unittest.TestCase):
                 avail = df.loc[target, img].notna().mean(axis=1).to_numpy()
                 self.assertLess(np.corrcoef(stage, avail)[0, 1], -0.2)
 
+
+if __name__ == "__main__":
+    unittest.main()

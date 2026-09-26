@@ -1,12 +1,16 @@
-"""Development benchmark: exact objective, full trajectory and model comparison.
+"""Check that the fast likelihood of fast_likelihood_v2.py reproduces pyebm 2.0.3 exactly, and time it.
 
-Examples (the pinned pyebm environment must already be available):
-  python scripts/v2/benchmark_fast_likelihood_v2.py --micro-calls 300
-  python scripts/v2/benchmark_fast_likelihood_v2.py --full-fit --events 4 14 \
-      --modes original repaired --output /tmp/fast_likelihood_bridge.json
+Compares objective values, the full optimizer trajectory and the fitted mixtures and orderings with and
+without the fast normal-density likelihood; any difference raises an error. test_fast_likelihood_v2.py
+imports the comparison helpers of this module.
 
-Output is JSON. It is a development equivalence/throughput check, not a
-confirmation simulation. No code or existing run is changed by this command.
+Examples (pyebm 2.0.3 must be installed):
+  python simulation/scripts/benchmark_fast_likelihood_v2.py --micro-calls 300
+  python simulation/scripts/benchmark_fast_likelihood_v2.py --full-fit --events 4 14 \
+      --modes original repaired --output fast_likelihood_check.json
+
+Output is JSON, printed and optionally written to --output. It is an equivalence and timing check, not
+part of any simulation run in the paper.
 """
 from __future__ import annotations
 

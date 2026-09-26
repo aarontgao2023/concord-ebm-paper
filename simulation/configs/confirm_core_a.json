@@ -6,9 +6,6 @@
   "permutation_batch": 8,
   "full_p_first_n": 100,
   "fit_timeout_s": 300,
-  "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
-  "full_p_policy": "The same first100 of1000 seeds in each cell and each engine/scheme complete allB599, selected before confirmation outcomes. Confirm mean p-shift using per-dataset averages of the three matched pair differences D minus U and seed-level Monte Carlo uncertainty. Per-pair and global-max p-values are separate. This sample does not establish precise tail probabilities, B convergence, equivalence, or noninferiority.",
-  "failure_policy": "Preserve all planned datasets and unsuccessful fits. Unknown planned outcomes may yield exact decisions via fixed-budget bounds; never change denominator to successful fits.",
   "run_id": "confirm_core_a",
   "base_seed": 42100000,
   "datasets": 1000,
@@ -35,20 +32,6 @@
       "require_max": true
     }
   },
-  "primary_endpoint": "REF repaired unrestricted-minus-diagnosis complete-null Bonferroni FWER paired difference; IID control and original/repaired sensitivity. Global-max error is separately reported. Pointwise Monte Carlo intervals, no equivalence claim from inclusion of .05.",
-  "paired_total_timeout_policy": "Shared original/repaired job total budget is twice the single-fit timeout. Preserve any completed first result on abort.",
-  "secondary_p_endpoint": "Mean over100 independent dataset-level averages of p_D minus p_U across the three pairs, separately by cell and engine; paired bootstrap at dataset level, not300 flattened p-values.",
   "fast_likelihood": true,
-  "execution_implementation": "Direct normal-PDF objective changes only distribution-object construction. Enable after HPC full optimizer/mixture/output exact-equivalence checks and same-seed B3 batch bridge; original/repaired share mixture only within a single identical-input job.",
-  "configuration_status": "frozen_for_independent_confirmation",
-  "freeze_utc": "2026-09-08T14:43:39.441270+00:00",
-  "freeze_policy": "Immutable source/config snapshot created before any42xxxxxx confirmation data are generated. Earlier41xxxxxx structural-preflight data are excluded. Changes prompted by confirmation outcomes require a new candidate and fresh seeds.",
-  "confirmation_namespace": "42xxxxxx",
-  "confirmation_gate_evidence": [
-    "results/v2_dev_estimated_prior_a/estimated_prior_analysis.json",
-    "results/v2_dev_paired_bridge_a/bridge_comparison.json",
-    "results/v2_dev_fast_bridge_a/bridge_comparison.json",
-    "results/v2_fast_likelihood_validation/fast_likelihood_hpc_observed.json",
-    "results/v2_fast_likelihood_validation/fast_likelihood_hpc_permuted.json"
-  ]
+  "purpose": "Separately fitted DEBM (engines original and repaired, fitted in one job from the same mixture fit) with the pyebm 2.0.3 default stopping rule. Different composition (REF_H0) and same composition (IID_H0); a new random true sequence for each dataset, shared by the three groups; measurements missing completely at random. Unrestricted and within-diagnosis permutation with 599 relabelings; a comparison is rejected when P = (1 + E)/600 <= 0.05/3. Computation stops once no further relabeling can change the three decisions, except in the first 100 datasets, which use all 599. Used in Fig. 2b and Fig. 3a (REF_H0, repaired)."
 }

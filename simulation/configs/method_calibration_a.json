@@ -4,7 +4,6 @@
  "rule": "le",
  "permutation_batch": 8,
  "fit_timeout_s": 600,
- "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
  "fast_likelihood": true,
  "paired_standard": false,
  "run_id": "method_calibration_a",
@@ -31,5 +30,5 @@
  },
  "bperm": 599,
  "full_p_first_n": 100,
- "purpose": "Second confirmation protocol: calibration of U-all and D-all under no true difference at the ADNI composition for the pooled-mixture and the composition-invariant (min reference) estimators; frozen rule B=599, inclusive; exact early stopping; first 100 seeds full budget."
+ "purpose": "Pooled-score DEBM (shared) and CONCORD (invariant_min) with different composition (REF_H0); a new random true sequence for each dataset, shared by the three groups; measurements missing completely at random. Unrestricted and within-diagnosis permutation with 599 relabelings and early stopping (all 599 in the first 100 datasets). Used in Fig. 2b and Fig. 3a. The same datasets form the independent Gaussian benchmark condition without a true difference (Fig. 3b)."
 }

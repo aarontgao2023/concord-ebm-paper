@@ -4,7 +4,6 @@
  "rule": "le",
  "permutation_batch": 8,
  "fit_timeout_s": 600,
- "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
  "fast_likelihood": true,
  "paired_standard": false,
  "run_id": "method_alt_geometry_a",
@@ -50,5 +49,5 @@
  },
  "bperm": 599,
  "full_p_first_n": 10,
- "purpose": "Review response: alternatives beyond uniform exact-K inversions -- one event displaced by 6 or 13 positions, six disjoint adjacent swaps; standard vs CONCORD under D-all."
+ "purpose": "Separately fitted DEBM (repaired) and CONCORD (invariant_min) with within-diagnosis permutation when one group's sequence differs by one event moved 6 positions (K6_SINGLE_*), six disjoint adjacent swaps (K6_DISJOINT_*) or one event moved 13 positions (K13_SINGLE_*). K13_SINGLE_E4 and K6_DISJOINT_E2 provide the datasets and the CONCORD results of two paired-benchmark conditions (Fig. 3c,d; Supplementary Table 2); the other cells are not used in the paper."
 }

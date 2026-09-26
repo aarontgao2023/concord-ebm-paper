@@ -1,0 +1,20 @@
+# Environment for the figure and table scripts in figures/ (Python 3.12). These are the versions
+# with which the published figures were drawn; the table scripts need NumPy only. The figures also
+# need the Arial font (see figures/README.md).
+#
+#   python3.12 -m venv .venv-figures
+#   .venv-figures/bin/pip install -r requirements/figures.txt
+
+matplotlib==3.11.2
+numpy==2.5.3
+
+# Dependencies of matplotlib, at the versions used for the published figures.
+contourpy==1.4.0
+cycler==0.12.1
+fonttools==4.66.0
+kiwisolver==1.5.1
+packaging==26.3
+pillow==12.3.0
+pyparsing==3.3.3
+python-dateutil==2.9.0.post0
+six==1.17.0

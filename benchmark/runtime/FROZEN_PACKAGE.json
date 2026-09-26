@@ -1,0 +1,24 @@
+{
+  "status": "frozen; formal execution approved under specified resource gate",
+  "files": {
+    "allgroup_engine.py": "5c6b6a2a8e515c5f0ea397398eb36cc939be1d27f0ec5af9150f39d6d7b1d776",
+    "audit_reuse.py": "0f1ddc4fcf3a3f3966e49f4397a78054a91155e4300aed7acb3a9fb191dfcb8a",
+    "batch_mapping.json": "3c690694d2ee72ac1af586f84c789b69297475f64ac8d3539cded40264ec598f",
+    "campaign.json": "025a369249b25b41c45d0b90e5c3ffb32b90014202515a85705f819698d4028f",
+    "inputs/historical_reused_rows.jsonl": "1954bebb0b1e09ff97b2d3487bb6fb90594cf71b6be1d7e29fb708ab82576386",
+    "robust_design.py": "1905093aefbbf92bb7bcc53241db6e532bfca23e00c31ce129ce0f14cb3e33f6",
+    "run_batch.py": "77d8294e722ea0e573f47edcda005ee6f5a2ea71ef6065e1c8f6a8a45731dab7",
+    "run_dataset.py": "8cde66b8fc46c94bc0bd030f7e0fea7df5226e005ee5a3a0e67cd35257aa3fa9",
+    "vendor/confirm_power_global_a/design_v2.py": "72975519adbf9ac07fe5361b2b5acc134b4d51344e00bd4f26023e20496513e1",
+    "vendor/confirm_power_global_a/run_v2.py": "5334c1c9b85de70af52e81f06292fc98c20bfd55dee16bfd57ea56c944d22926",
+    "vendor/method_alt_geometry_a/design_v2.py": "9a7766dc5890d2df659bc686e7faf748da620a418ac2e3649910039091204427",
+    "vendor/method_alt_geometry_a/run_v2.py": "dae15feabe874d3faf074b18da319ab6148e06a6e2f4faa57a44f6eaa476fc91",
+    "vendor/method_calibration_a/design_v2.py": "72975519adbf9ac07fe5361b2b5acc134b4d51344e00bd4f26023e20496513e1",
+    "vendor/method_calibration_a/run_v2.py": "568f2d59bb49074e2f32f9db39a5814d9012eb8af5061e7c10fe0bfd78454740",
+    "vendor/w3/audit_engine.py": "26081182709e2b491629250ea0313a266ed97451c8dcc840f932910657c8690e",
+    "vendor/w3/run_stop_isolation.py": "3f79f93c2e268f9f31d5bd1fa57941d7232d8551cc1768f24e927625537f0140"
+  },
+  "execution_gate_sha256": "6b239737f7cade690b71918deb89f386b5166574b42646e65c624ed1261e7c2d",
+  "executed_frozen_package_sha256": "99052c6b8ca24729f08aa87da7293b3cd409217382eec3782da3f578827a8904",
+  "note": "Hashes of the files published in this directory. The executed package also listed PROTOCOL.md, vendor/CONCORD_LICENSE (the GPL-3.0 text, identical to LICENSE at the repository root) and vendor/current/*.py (now simulation/scripts); see EXECUTION_GATE.json published_copy."
+}

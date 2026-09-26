@@ -4,7 +4,6 @@
  "rule": "le",
  "permutation_batch": 8,
  "fit_timeout_s": 600,
- "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
  "fast_likelihood": true,
  "paired_standard": false,
  "run_id": "method_mechanism_a",
@@ -156,5 +155,5 @@
  "schemes": {},
  "bperm": 0,
  "full_p_first_n": 0,
- "purpose": "Second confirmation protocol, frozen 2026-09-12: composition-dependent estimation target under a fixed true ordering, standard vs pooled-mixture vs composition-invariant estimators; no permutations. Fresh seeds 53.0M, disjoint from development (31.xM) and the first protocol (42.xM)."
+ "purpose": "Separately fitted DEBM (repaired), pooled-score DEBM (shared) and CONCORD with common proportions from the minimum rule (invariant_min) or equal to the pooled proportions (invariant_pooled), on one fixed true sequence with measurements missing completely at random, at the original and fourfold sample size. No permutations. Used in Fig. 2d (repaired and invariant_min in REF_S, IID_S, REF_S_N4 and IID_S_N4)."
 }

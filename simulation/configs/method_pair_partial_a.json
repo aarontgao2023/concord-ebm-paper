@@ -4,7 +4,6 @@
  "rule": "le",
  "permutation_batch": 8,
  "fit_timeout_s": 600,
- "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
  "fast_likelihood": true,
  "paired_standard": false,
  "run_id": "method_pair_partial_a",
@@ -58,5 +57,5 @@
  },
  "bperm": 599,
  "full_p_first_n": 0,
- "purpose": "Second confirmation protocol: strong control (true-null pair with a third group under a K=27 alternative) and pair power of the composition-invariant estimator; E2/E4 datasets identical to method_power_a (seeds 53.2M)."
+ "purpose": "CONCORD (invariant_min) with pairwise within-diagnosis permutation when one group (PWR_E2_K27: CN-heavy; PWR_E33_K27: intermediate; PWR_E4_K27: AD-heavy) has 27 of its 91 event pairs reversed. The comparison between the two unchanged groups is shown in Supplementary Fig. 1b."
 }

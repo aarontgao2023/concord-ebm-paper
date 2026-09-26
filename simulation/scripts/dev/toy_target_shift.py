@@ -2,12 +2,12 @@
 changes with the stage composition even with ONE common measurement model and identical
 conditional laws in every group.
 
-Model. Events A, B, C occur in the true order A < B < C. A subject at stage k has the first k events
+Model. Events A, B, C occur in the true order A < B < C. A participant at stage k has the first k events
 occurred. Each biomarker is N(0,1) before and N(delta_e,1) after its event; the (common, pooled)
 measurement model turns a value x into q_e(x) = pi phi(x-delta_e) / (pi phi(x-delta_e) + (1-pi) phi(x)),
-with a common mixing weight pi. The subject-level loss is pyebm's weighted Kendall discordance
+with a common mixing weight pi. The participant-level loss is pyebm's weighted Kendall discordance
    l(S; q) = sum over pairs (a before b in S, q_a < q_b) of (q_b - q_a),
-and the population target under composition w = (w_0,...,w_3) over stages is argmin_S sum_k w_k L_k(S),
+and the best-fitting ordering at composition w = (w_0,...,w_3) over stages is argmin_S sum_k w_k L_k(S),
 L_k(S) = E[l(S;q) | stage k]. L_k is computed by Monte Carlo with a common random stream per stage.
 """
 import itertools, numpy as np

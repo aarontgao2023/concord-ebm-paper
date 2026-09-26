@@ -1,4 +1,4 @@
-"""Exact objective/trajectory and context-restoration checks for the fast PDF arm."""
+"""Exact objective/trajectory and context-restoration checks for the fast normal-density likelihood."""
 from __future__ import annotations
 
 import unittest

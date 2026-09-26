@@ -1,7 +1,7 @@
 """Fixed-budget inference, permutation coupling, and durable resume checks.
 
 Run with the scientific environment and pinned pyebm wheel on PYTHONPATH:
-python -m unittest discover -s scripts/v2 -p test_run_v2.py -v
+python -m unittest discover -s simulation/scripts -p test_run_v2.py -v
 Only one integration test fits DEBM; the exhaustive/resume tests use synthetic
 statistics so their independent reference decisions remain inspectable.
 """

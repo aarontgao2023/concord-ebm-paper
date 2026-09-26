@@ -4,7 +4,6 @@
  "rule": "le",
  "permutation_batch": 8,
  "fit_timeout_s": 600,
- "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
  "fast_likelihood": true,
  "paired_standard": false,
  "run_id": "method_saebm_reference_a",
@@ -113,5 +112,5 @@
  "schemes": {},
  "bperm": 0,
  "full_p_first_n": 0,
- "purpose": "Second confirmation protocol: complete-data (missing=false) fixed-ordering mechanism cells for the standard, pooled-mixture and composition-invariant estimators, matched seed-for-seed to the SA-EBM arm (method_saebm_a, pysaebm conjugate priors, same seeds 53.4M) which requires complete data. No permutations."
+ "purpose": "Separately fitted DEBM (repaired), pooled-score DEBM (shared) and CONCORD (invariant_min) on one fixed true sequence with complete measurements (cells ending in _CD), with the same seeds as the SA-EBM run (method_saebm_a) and method_kde_mechanism_a. No permutations. Used in Fig. 2a,c (REF_S_CD and IID_S_CD)."
 }

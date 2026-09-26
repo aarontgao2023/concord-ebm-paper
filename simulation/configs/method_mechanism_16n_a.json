@@ -4,7 +4,6 @@
  "rule": "le",
  "permutation_batch": 8,
  "fit_timeout_s": 3600,
- "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
  "fast_likelihood": true,
  "paired_standard": false,
  "run_id": "method_mechanism_16n_a",
@@ -65,5 +64,5 @@
  "schemes": {},
  "bperm": 0,
  "full_p_first_n": 0,
- "purpose": "Review response: does the composition gap persist at 16n (n=15,536)? Standard vs CONCORD, fixed true ordering."
+ "purpose": "Separately fitted DEBM (repaired) and CONCORD (invariant_min) on one fixed true sequence with measurements missing completely at random, at 16 times the original sample size (n = 15,536); 200 datasets. No permutations. Used in Fig. 2d (16n)."
 }

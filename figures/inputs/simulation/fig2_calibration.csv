@@ -1,0 +1,7 @@
+method,operator,reject,R,source,low,high,rate
+Standard,U-all,132,1000,"confirm_core_a, cell REF_H0 (core_rates_exact.py)",0.1124216361480769,0.15439485809729173,0.132
+Standard,D-all,30,1000,"confirm_core_a, cell REF_H0 (core_rates_exact.py)",0.0210937388288347,0.04250341414758712,0.03
+Pooled only,U-all,777,1000,"method_calibration_a, cell REF_H0 (rates_exact_all.py)",0.7501681060278989,0.8017118697711036,0.777
+Pooled only,D-all,28,1000,"method_calibration_a, cell REF_H0 (rates_exact_all.py)",0.01944227681277093,0.040170183197593114,0.028
+CONCORD,U-all,108,1000,"method_calibration_a, cell REF_H0 (rates_exact_all.py)",0.09024119856255192,0.1287589800901233,0.108
+CONCORD,D-all,42,1000,"method_calibration_a, cell REF_H0 (rates_exact_all.py)",0.03122088554616545,0.056284425226603055,0.042

@@ -1,0 +1,155 @@
+{
+  "schema": "w45-campaign-v1",
+  "status": "prepared; formal launch needs engine/resource gate",
+  "engine": "W3 all-group outer mixing change<0.01; original SLSQP; continued consensus",
+  "bperm": 599,
+  "alpha": 0.05,
+  "rule": "inclusive_bonferroni",
+  "permutation_scheme": "diagnosis",
+  "fit_timeout_s": 600,
+  "power": [
+    {
+      "id": "EXACT27_G1",
+      "historical_run": "confirm_power_global_a",
+      "historical_cell": "PWR_E2_K27",
+      "base_seed": 42200000,
+      "datasets": 500,
+      "new_arms": [
+        "repaired",
+        "shared",
+        "invariant_min"
+      ],
+      "historical_standard_role": "secondary implementation sensitivity only; new all-group Standard is primary"
+    },
+    {
+      "id": "EXACT27_G3",
+      "historical_run": "confirm_power_global_a",
+      "historical_cell": "PWR_E4_K27",
+      "base_seed": 42200000,
+      "datasets": 500,
+      "new_arms": [
+        "repaired",
+        "shared",
+        "invariant_min"
+      ],
+      "historical_standard_role": "secondary implementation sensitivity only; new all-group Standard is primary"
+    },
+    {
+      "id": "SINGLE13_G3",
+      "historical_run": "method_alt_geometry_a",
+      "historical_cell": "K13_SINGLE_E4",
+      "base_seed": 53800000,
+      "datasets": 500,
+      "new_arms": [
+        "repaired",
+        "shared"
+      ],
+      "historical_standard_role": "secondary implementation sensitivity only; new all-group Standard is primary"
+    },
+    {
+      "id": "DISJOINT6_G1",
+      "historical_run": "method_alt_geometry_a",
+      "historical_cell": "K6_DISJOINT_E2",
+      "base_seed": 53800000,
+      "datasets": 500,
+      "new_arms": [
+        "repaired",
+        "shared"
+      ],
+      "historical_standard_role": "secondary implementation sensitivity only; new all-group Standard is primary"
+    },
+    {
+      "id": "GAUSSIAN_H0",
+      "historical_run": "method_calibration_a",
+      "historical_cell": "REF_H0",
+      "historical_anchor_engine": "shared",
+      "base_seed": 53100000,
+      "datasets": 1000,
+      "new_arms": [
+        "repaired"
+      ],
+      "historical_standard_role": "no paired old Standard on this stream; previous independent Standard calibration retained separately"
+    }
+  ],
+  "robustness": [
+    {
+      "id": "CORR_H0",
+      "mechanism": "CORR",
+      "cell": "H0",
+      "base_seed": 92110000,
+      "datasets": 1000,
+      "new_arms": [
+        "repaired",
+        "shared",
+        "invariant_min"
+      ]
+    },
+    {
+      "id": "CORR_SINGLE6_G1",
+      "mechanism": "CORR",
+      "cell": "SINGLE6_G1",
+      "base_seed": 92120000,
+      "datasets": 500,
+      "new_arms": [
+        "repaired",
+        "shared",
+        "invariant_min"
+      ]
+    },
+    {
+      "id": "CORR_SINGLE13_G3",
+      "mechanism": "CORR",
+      "cell": "SINGLE13_G3",
+      "base_seed": 92130000,
+      "datasets": 500,
+      "new_arms": [
+        "repaired",
+        "shared",
+        "invariant_min"
+      ]
+    },
+    {
+      "id": "T5_H0",
+      "mechanism": "T5",
+      "cell": "H0",
+      "base_seed": 92210000,
+      "datasets": 1000,
+      "new_arms": [
+        "repaired",
+        "shared",
+        "invariant_min"
+      ]
+    },
+    {
+      "id": "T5_SINGLE6_G1",
+      "mechanism": "T5",
+      "cell": "SINGLE6_G1",
+      "base_seed": 92220000,
+      "datasets": 500,
+      "new_arms": [
+        "repaired",
+        "shared",
+        "invariant_min"
+      ]
+    },
+    {
+      "id": "T5_SINGLE13_G3",
+      "mechanism": "T5",
+      "cell": "SINGLE13_G3",
+      "base_seed": 92230000,
+      "datasets": 500,
+      "new_arms": [
+        "repaired",
+        "shared",
+        "invariant_min"
+      ]
+    }
+  ],
+  "execution_policy": {
+    "power": "exact_fixed_budget_decision_bounds",
+    "robustness": "exact_fixed_budget_decision_bounds",
+    "robustness_full_p_values_are_endpoint": false,
+    "bound_rule": "all three Bonferroni pair decisions are identical under every completion of the fixed599 stream; never stop based on desired outcome",
+    "power_full_p_values_are_endpoint": false
+  }
+}

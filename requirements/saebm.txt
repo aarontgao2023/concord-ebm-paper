@@ -1,0 +1,13 @@
+# Separate environment for SA-EBM: simulation/scripts/dev/saebm_mechanism_dev.py, run through
+# simulation/hpc/saebm_mechanism_freeze.sbatch with SAEBM_PYTHON pointing to this environment
+# (run method_saebm_a, Fig. 2a,c). The published run used pysaebm 7.7.7.
+#
+#   python3.12 -m venv .venv-saebm
+#   .venv-saebm/bin/pip install -r requirements/saebm.txt
+#   export SAEBM_PYTHON="$PWD/.venv-saebm/bin/python"
+
+pysaebm==7.7.7
+
+# Also imported by the SA-EBM script and the data generator (simulation/scripts/design_v2.py).
+numpy
+pandas

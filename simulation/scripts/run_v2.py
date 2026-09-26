@@ -32,6 +32,7 @@ from dependency_v2 import verify_pyebm
 from oracle_engine_v2 import fit_oracle_orderings
 from oracle_estimated_prior_v2 import fit_oracle_estimated_prior_orderings
 from invariant_engine_v2 import fit_invariant_orderings, VARIANTS as INVARIANT_VARIANTS
+from kde_engine_v2 import fit_kde_orderings, KDE_VARIANTS
 from fast_likelihood_v2 import fast_likelihood_context, FAST_LIKELIHOOD_VERSION
 
 PAIRS = ((0, 1), (0, 2), (1, 2))
@@ -180,7 +181,7 @@ def fit_job(job):
             if engine.startswith('oracle_'):
                 raise ValueError('Oracle engines are mechanism diagnostics only')
             df = permute(df, truth, seed, scheme, pid, config['schemes'][scheme])
-        mode = 'repaired' if engine in INVARIANT_VARIANTS else engine.rsplit('_', 1)[-1]
+        mode = 'repaired' if (engine in INVARIANT_VARIANTS or engine in KDE_VARIANTS) else engine.rsplit('_', 1)[-1]
         ec = EngineConfig(mode=mode, audit_original_neighbors=scheme is None,
                           expected_events=len(truth['biomarker_names']),
                           biomarker_names=tuple(truth['biomarker_names']))
@@ -188,6 +189,8 @@ def fit_job(job):
                                      (engine in ('original', 'repaired') or engine in INVARIANT_VARIANTS)):
             if engine in INVARIANT_VARIANTS:
                 result = fit_invariant_orderings(df, ec, variant=engine)
+            elif engine in KDE_VARIANTS:
+                result = fit_kde_orderings(df, ec, variant=KDE_VARIANTS[engine])
             elif engine.startswith('oracle_estimated_'):
                 result = fit_oracle_estimated_prior_orderings(df, truth, engine_config=ec)
             elif engine.startswith('oracle_'):
@@ -329,7 +332,7 @@ def source_hashes():
     return {p.name: hashlib.sha256(p.read_bytes()).hexdigest()
             for p in sorted(root.glob('*.py')) if p.name in {
                 'run_v2.py', 'design_v2.py', 'engine_v2.py',
-                'dependency_v2.py', 'oracle_engine_v2.py', 'oracle_estimated_prior_v2.py', 'paired_engine_v2.py', 'fast_likelihood_v2.py', 'invariant_engine_v2.py'}}
+                'dependency_v2.py', 'oracle_engine_v2.py', 'oracle_estimated_prior_v2.py', 'paired_engine_v2.py', 'fast_likelihood_v2.py', 'invariant_engine_v2.py', 'kde_engine_v2.py'}}
 
 
 def load_events(path):

@@ -1,0 +1,25 @@
+{
+ "phase": "confirmation",
+ "alpha": 0.05,
+ "rule": "le",
+ "permutation_batch": 8,
+ "fit_timeout_s": 600,
+ "fast_likelihood": false,
+ "paired_standard": false,
+ "run_id": "method_kde_mechanism_a",
+ "base_seed": 53400000,
+ "datasets": 1000,
+ "engines": [
+  "kde_gmm",
+  "kde_gmm_pooled"
+ ],
+ "cells": [
+  {"id": "IID_S_CD", "name": "IID_H0", "overrides": {"fixed_base_order": [5, 9, 1, 12, 11, 10, 3, 8, 13, 0, 6, 7, 2, 4], "missing": false}},
+  {"id": "REF_S_CD", "name": "REF_H0", "overrides": {"fixed_base_order": [5, 9, 1, 12, 11, 10, 3, 8, 13, 0, 6, 7, 2, 4], "missing": false}},
+  {"id": "REF_S_N4_CD", "name": "REF_H0", "overrides": {"fixed_base_order": [5, 9, 1, 12, 11, 10, 3, 8, 13, 0, 6, 7, 2, 4], "missing": false, "sample_scale": 4}}
+ ],
+ "schemes": {},
+ "bperm": 0,
+ "full_p_first_n": 0,
+ "purpose": "Likelihood EBM (kde_ebm Gaussian-mixture event models, greedy search for the maximum-likelihood sequence) with mixtures fitted in each group (kde_gmm) or to all participants (kde_gmm_pooled), on one fixed true sequence with complete measurements; the same seeds as method_saebm_reference_a. No permutations. Used in Fig. 2a,c (kde_gmm in REF_S_CD and IID_S_CD)."
+}

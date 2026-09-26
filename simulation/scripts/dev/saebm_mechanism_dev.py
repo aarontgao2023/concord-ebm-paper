@@ -1,16 +1,25 @@
-"""Development: SA-EBM (Hao et al. 2025, pysaebm) as an alternative estimator, mechanism mode.
-Same fixed true ordering S, same cells and seeds as standardized_consensus_dev.py, but simulated
-with missing=False because pysaebm requires a complete participant x biomarker matrix. Each group
-is fitted separately with run_ebm(algorithm='conjugate_priors'); 'diseased' = Diagnosis != CN.
-Outputs the per-group ordering, distance to S and fit time, in the same row format as the
-DEBM-based dev scripts so analyze_stdcons.py-style tables can be produced side by side.
-Runs under ~/saebm-env (pysaebm + numpy/pandas); design_v2 is imported from the frozen snapshot."""
+"""SA-EBM (pysaebm; Hao et al. 2025) on the complete-data fixed-sequence cells (run method_saebm_a; Fig. 2a,c).
+
+Each dataset is simulated with design_v2 with one fixed true sequence and missing=False, because pysaebm
+needs a complete participant-by-biomarker matrix. Each simulated group is fitted separately with
+run_ebm(algorithm='conjugate_priors'); CN participants are non-diseased and MCI and AD participants are
+diseased. The reported ordering is pysaebm's order_with_highest_ll. The pysaebm seed is the dataset seed
+modulo 100000. Each dataset gives one JSON line with the three group orderings, their normalized Kendall
+distances to the true sequence and the fit times (rows_chunkNNN.jsonl in --output), which
+simulation/summaries/ reads.
+
+The run in the paper used cells IID_S, REF_S, BAL_S and REF_S_N4, seeds 53400000-53400999, 10,000
+iterations and 2,500 burn-in iterations (hpc/saebm_mechanism_freeze.sbatch); the argument defaults below
+are those of an earlier development run. Run it in an environment with pysaebm (the paper used pysaebm
+7.7.7). design_v2 is imported from the directory in the environment variable EBM_SNAPSHOT if it is set,
+otherwise from simulation/scripts.
+"""
 import argparse, json, os, sys, time, tempfile, shutil, warnings, logging
 from multiprocessing import get_context
 from pathlib import Path
 import numpy as np, pandas as pd
 warnings.filterwarnings('ignore'); logging.disable(logging.CRITICAL)
-SNAP = os.environ.get('EBM_SNAPSHOT', '/N/slate/tg11/ebmcal_v2/snapshots/confirm_core_a/scripts/v2')
+SNAP = os.environ.get('EBM_SNAPSHOT', str(Path(__file__).resolve().parents[1]))
 sys.path.insert(0, SNAP)
 FIXED_S = [5, 9, 1, 12, 11, 10, 3, 8, 13, 0, 6, 7, 2, 4]
 MECH_CELLS = {'IID_S': ('IID_H0', {}), 'REF_S': ('REF_H0', {}), 'BAL_S': ('BALANCED_H0', {}),

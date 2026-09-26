@@ -1,0 +1,28 @@
+# Environment for simulation/, benchmark/ and realdata/.
+#
+# The published analyses ran under Python 3.12.14 with the versions below. The formal runs of
+# benchmark/runtime and realdata/runtime refuse to start unless Python, NumPy, SciPy, pandas,
+# scikit-learn, statsmodels and pyebm have exactly these versions (EXECUTION_GATE.json), and
+# simulation/scripts/dependency_v2.py checks the installed pyebm files against the 2.0.3 wheel
+# (sha256 246e1bb93db4ad0ed0c701f3e241b9c7ceda112599acff1c86291abaf6cb8df4).
+#
+#   python3.12 -m venv .venv-analysis
+#   .venv-analysis/bin/pip install -r requirements/analysis.txt
+
+numpy==1.26.4
+scipy==1.13.1
+pandas==2.2.3
+scikit-learn==1.5.2
+statsmodels==0.14.6
+pyebm==2.0.3
+
+# Likelihood EBM (model label kde_gmm): kde_ebm 0.0.3. realdata/runtime also checks the hashes of its
+# source files.
+kde_ebm @ git+https://github.com/ucl-pond/kde_ebm@3ad8b648a4a2d0a8df0707f382b54c4ebef0805c
+
+# concord-ebm 0.1.1, used by the scripts in realdata/earlier_panels/adni and
+# realdata/earlier_panels/nacc (the MRI-cognition scripts carry their own copy).
+concord-ebm @ git+https://github.com/aarontgao2023/concord-ebm@40fc046f1c11e65228e9cf62d99a3d94fd4937bc
+
+# Reads the FreeSurfer spreadsheet in realdata/earlier_panels/adni/build_cohort.py.
+openpyxl

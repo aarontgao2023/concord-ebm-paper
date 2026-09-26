@@ -1,0 +1,80 @@
+{
+  "formal_launch_approved": true,
+  "preflight_passed": true,
+  "published_copy_note": "Published copy of the production gate. The source hashes of engine_adapter.py and run_common_panel.py were recomputed after two edits: the engines are imported from simulation/scripts (byte-identical to the vendor/current copies that ran), and those files are recorded under their vendor/current names. All other values are those of the executed runtime.",
+  "campaign_sha256": "dc5511321ad49f4ad8a8a97abc9a738d3f955ed8e81cc174840e6d724cee5a95",
+  "source_sha256": {
+    "allgroup_engine.py": "5c6b6a2a8e515c5f0ea397398eb36cc939be1d27f0ec5af9150f39d6d7b1d776",
+    "batch_launcher.py": "3e1a4cb3bd1e1b5070007ffbff55b03f7a54eaec77c12dea924b3e7676b101ca",
+    "common.py": "e01586451f66ec77ce6867a7f3a2cc2dadb5ad935ea72545a0f7ae13eb2c8ad1",
+    "engine_adapter.py": "2c4627984e7254c72d263817ad387c9e3d3d876cab083994d93b82b08ca98d07",
+    "run_common_panel.py": "dc431fa4fe8ed12336d8fc9750e518b18de58248aaa474777983525a18d15544",
+    "validate_runtime_logic.py": "92391591919d828f2152ace5bd8f92479da5dee1b29b38f97496e92b1479e6fb",
+    "vendor/current/dependency_v2.py": "751db74129e96c1870df17da52abfe250ca48a184360eda066878a29fc4a22e8",
+    "vendor/current/engine_v2.py": "8115fcf3ddebdf7b3c71513ace4919284db8dd512b0743b1812fd0dcc67538c0",
+    "vendor/current/fast_likelihood_v2.py": "e293eae98b6d269dae997100d701ef329dcadae7bf1fd6bae734fa6e608cdd57",
+    "vendor/current/invariant_engine_v2.py": "694c4d23aeb5a51e31921959cdcd2be6ffa86e038b69ad8dc09e4082aa610e12",
+    "vendor/current/kde_engine_v2.py": "459e51d0846391452e57b940bac0e487689fca13e418520720a457ae12c4d7e1",
+    "vendor/w3/audit_engine.py": "26081182709e2b491629250ea0313a266ed97451c8dcc840f932910657c8690e",
+    "vendor/w3/run_stop_isolation.py": "3f79f93c2e268f9f31d5bd1fa57941d7232d8551cc1768f24e927625537f0140"
+  },
+  "environment_versions": {
+    "python": "3.12.14",
+    "pyebm": "2.0.3",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.5.2",
+    "statsmodels": "0.14.6"
+  },
+  "kde_ebm_source_sha256": {
+    "__init__.py": "1cef99871a061aaabff15d49d6874f15add7d0e9a4a765e191b49ac8f11cd44c",
+    "datasets/__init__.py": "16f150b2e9b7b185d74876a2e1509ff6d214d129e9d288f6dfb8a90f6417c7a0",
+    "datasets/base.py": "7fc174b6f549a0b851f7604f18137ea87244549923e8743d2bc535bcf87521cf",
+    "datasets/data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "datasets/setup.py": "3e987ff3ce1b2919ddb036fe0271e6efdf9cfb9f74cc933096a3ab5e3487ab8c",
+    "distributions/__init__.py": "8327dcec1f24e758c4cef54d9c2be999610cca6a24964b6568b2064451237958",
+    "distributions/gaussian.py": "54ce303dc1f4d26485a8f167018ef43d53626169af14f9e8bf69d83f9448ffea",
+    "event_order/__init__.py": "a46a50e4c52eef542cbf1f08c826ae845f2bf2de9444a05c6264cea01597bfe3",
+    "event_order/event_order.py": "d1afe1de418ca2a5ba408e8e6971772ac0a35254d27e7f6b53817a97cb371064",
+    "mcmc/__init__.py": "9011d0e0b5adb6fb463addb4e5b671d62305193590f65d096fd321d0cd809f1f",
+    "mcmc/mcmc.py": "58ff169aaad91d36da1858e63c23fcec35a2c57b776f9a2243e011abfa4d8d8a",
+    "mcmc/utils.py": "b0947d58937eb5220c087afec8db1589c62431edbf8d712fab6de571a4f95411",
+    "mixture_model/__init__.py": "15b2977c12d47128c8436dd0d5cd94ffe2d9149e10cf87f5d2a5bc234348fe0f",
+    "mixture_model/gmm.py": "33b812b13baeb4dda467cb41649c3512cc3af1b8739bd532af097c619baac0b3",
+    "mixture_model/kde.py": "ef29f80162eedeb0ddf0d53d3557896877e27ff6ebc0078d4a9caa133e6a49bd",
+    "mixture_model/utils.py": "e1854c976600a737c32aeb6306b47696d5db028e1003fe24b70fee848ac3002d",
+    "plotting/__init__.py": "71a390abb28cbe731648b618dd515730879364f61ac45d4e2e071998fa5cd142",
+    "plotting/plotting.py": "332e61a7749e05ed85b1b3192c823cc0591ade70208b0fe3add6b183282ada96",
+    "setup.py": "15c874d56a1fea10ff39a5117ba23a8c0aa7b48e605aa7ae47735e2157c34947",
+    "tests/__init__.py": "3e8ad1b1eae716f0156e25a2bc24946d8601123a100fb22ddd012d305b8adb27",
+    "tests/test_ebm.py": "51589c5bf97704fde73d14e74b24c6e91d205d89b229e1942d1308568e382953",
+    "tests/test_gaussian.py": "77e948cc9f390e568ee7e262f1dd1650ab3b17f829abaad7353f54e0255d6654",
+    "tests/test_kdemm.py": "9fbfc5f1e5922ad3b7c7779ad364217bb0f7c559cdc32a3384853577249f59f9",
+    "tests/test_mixtures.py": "a9754203dcbdc5978303b04642c764cd2602e5ece429a16bc901d5eda1abd112"
+  },
+  "batch_mapping_sha256": "3ab8ae5c5bd088eef95b51b9656b415365131547d62a68b85ca13980d72bdf29",
+  "frozen_runtime_manifest_sha256": "8ba16b68caa831c1f0a681fae096d86ffdf10b2d6da65f689431434c8e3df4b3",
+  "serial_parallel_scientific_records_equal": true,
+  "unique_preflight_records_compared": 118,
+  "formal_budget": 599,
+  "preflight_budget": 8,
+  "formal_denominator_includes_preflight": false,
+  "record_provenance_normalization": {
+    "path": "/diagnostics/provenance/kde_ebm_source_sha256",
+    "rule": "Omit only after every present map equals the identical unit environment witness and the remaining base provenance equals that witness with the KDE map removed",
+    "counts": {
+      "present_and_verified": 114,
+      "absent_base_verified": 114
+    },
+    "paired_manifests_verified": 8,
+    "validator_sha256": "73ef43d3bfa52dd8422434a679e76d720ea0a42b2acc68fcd2763db8791004a7"
+  },
+  "resource_ceiling": {
+    "cpus_per_task": 16,
+    "memory_GB": 32,
+    "walltime_hours": 24,
+    "new_array_concurrency": 16,
+    "combined_core_cap": 512
+  }
+}

@@ -1,6 +1,6 @@
 """Fast paired-job scheduling, durable append, and per-engine inference tests.
 
-Run: python -m unittest discover -s scripts/v2 -p test_paired_runner_v2.py -v
+Run: python -m unittest discover -s simulation/scripts -p test_paired_runner_v2.py -v
 The scientific imports are required, but every fit and worker pool is a fixture.
 """
 from contextlib import contextmanager, redirect_stdout

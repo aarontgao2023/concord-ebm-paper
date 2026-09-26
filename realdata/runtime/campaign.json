@@ -1,0 +1,159 @@
+{
+  "name": "nc_common_panel_20260923",
+  "version": 1,
+  "R": 200,
+  "B": 599,
+  "alpha": 0.05,
+  "bootstrap_R": 200,
+  "n_per_group": 160,
+  "biomarkers": [
+    "ABETA",
+    "TAU",
+    "PTAU",
+    "MEM",
+    "EXF",
+    "LAN"
+  ],
+  "panels": {
+    "CSFcog6": [
+      "ABETA",
+      "TAU",
+      "PTAU",
+      "MEM",
+      "EXF",
+      "LAN"
+    ],
+    "omit_ptau": [
+      "ABETA",
+      "TAU",
+      "MEM",
+      "EXF",
+      "LAN"
+    ]
+  },
+  "primary_panel": "CSFcog6",
+  "reference": [
+    0.48925717280230574,
+    0.2859295165727761,
+    0.2248133106249181
+  ],
+  "reference_rule": "Normalize per-diagnosis minimum across both cohorts and all three APOE groups; compute from frozen complete6 counts, hold fixed for all fits.",
+  "diagnosis_order": [
+    "CN",
+    "MCI",
+    "AD"
+  ],
+  "group_order": [
+    "e2",
+    "e33",
+    "e4"
+  ],
+  "composition_allocation": {
+    "matched_a": [
+      80,
+      48,
+      32
+    ],
+    "matched_b": [
+      80,
+      48,
+      32
+    ],
+    "imbalanced_a": [
+      112,
+      32,
+      16
+    ],
+    "imbalanced_b": [
+      48,
+      64,
+      48
+    ]
+  },
+  "fit_timeout_s": 900,
+  "cohorts": {
+    "adni": {
+      "n": 1203,
+      "raw_file": "inputs/adni/raw_deid.csv",
+      "adjusted_file": "inputs/adni/adjusted_deid.csv",
+      "draw_file": "inputs/adni/composition_draws.npz",
+      "draw_seed_base": 2026092301,
+      "fit_seed_base": 2026231000,
+      "apoe_seed": 2026239001,
+      "bootstrap_seed": 2026238001,
+      "counts": {
+        "e2": [
+          50,
+          39,
+          8
+        ],
+        "e33": [
+          222,
+          273,
+          65
+        ],
+        "e4": [
+          98,
+          299,
+          149
+        ]
+      },
+      "labels": [
+        "CN",
+        "MCI",
+        "AD"
+      ]
+    },
+    "nacc": {
+      "n": 1584,
+      "raw_file": "inputs/nacc/raw_deid.csv",
+      "adjusted_file": "inputs/nacc/adjusted_deid.csv",
+      "draw_file": "inputs/nacc/composition_draws.npz",
+      "draw_seed_base": 2026092302,
+      "fit_seed_base": 2026232000,
+      "apoe_seed": 2026239002,
+      "bootstrap_seed": 2026238002,
+      "counts": {
+        "e2": [
+          106,
+          15,
+          22
+        ],
+        "e33": [
+          480,
+          104,
+          175
+        ],
+        "e4": [
+          281,
+          94,
+          307
+        ]
+      },
+      "labels": [
+        "CN",
+        "MCI",
+        "AD"
+      ]
+    }
+  },
+  "frozen_files": {
+    "inputs/adni/adjusted_deid.csv": "ff7b37290757acbc885333ba656c05f8a3ddbe9098e5975434c22bb824d00fe2",
+    "inputs/adni/composition_draws.npz": "f0efba4821d85320daab296685f3280c031b92c082b40ba080b87854c0ee62c0",
+    "inputs/adni/correction.json": "8b19998ea2492865fddc3c3370d8b804745394504bdb15700254177ccbf9f51e",
+    "inputs/adni/draw_audit.json": "4cb61ba58d0b3c141944bdfd929cd0e0cc40c543020ec823cd46e16fdcdd1a44",
+    "inputs/adni/raw_deid.csv": "38d5b61b12890607f98fcc487213998f26ded383e7b1fb0c9da26b22936d3bc9",
+    "inputs/adni/support.json": "335a302eb8a623278bcdf458122a48959617420ecac4994c9bb65dc70c9bee70",
+    "inputs/nacc/adjusted_deid.csv": "a0ae39b93ef3ea3d5777c17afcd7788cb3c8eb8ecfc8f85327d559fcbb6b3144",
+    "inputs/nacc/composition_draws.npz": "22239b14dda6cb451991acd9518b90cc29cac9c564cb2c7b3566fbf513dd558c",
+    "inputs/nacc/correction.json": "3036b978171bf13dac586eb4869f4cf0b6b7147b8a0a2245d43a83d1be071e9a",
+    "inputs/nacc/draw_audit.json": "01ebab56cc389c49e4c6d06a85162dcfccb86a6bec011c7a3a589577d44e292a",
+    "inputs/nacc/raw_deid.csv": "e7d07f07713621a62fa3332d126ae86393cefa821efe5a747ddbc6109f29d355",
+    "inputs/nacc/support.json": "1af761a86cd05d1d4cb9f9eef26fccf2e0755d9fb1caab03072cfb49a474de62"
+  },
+  "scope": "New coverage-selected complete common CSF-cognition campaign; no historical outputs relabelled; no simulations.",
+  "selection_basis": "Biomarker definitions and aggregate coverage only; no fitted orderings or test outcomes used.",
+  "primary_inference": "Three APOE D-pair comparisons per cohort on CSFcog6, Bonferroni within cohort; full 599 permutations.",
+  "sensitivity": "Omit p-tau on the identical participants, corrections and reference; report alongside primary, never select by P value.",
+  "bootstrap": "200 resamples within APOE x diagnosis, refit shared scoring and ordering on fixed corrected inputs; reference fixed; conditional rank stability, not full preprocessing uncertainty."
+}

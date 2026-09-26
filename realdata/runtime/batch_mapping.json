@@ -1,0 +1,4134 @@
+[
+  [
+    {
+      "mode": "apoe",
+      "cohort": "adni",
+      "panel": "CSFcog6"
+    }
+  ],
+  [
+    {
+      "mode": "apoe",
+      "cohort": "adni",
+      "panel": "omit_ptau"
+    }
+  ],
+  [
+    {
+      "mode": "apoe",
+      "cohort": "nacc",
+      "panel": "CSFcog6"
+    }
+  ],
+  [
+    {
+      "mode": "apoe",
+      "cohort": "nacc",
+      "panel": "omit_ptau"
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 0
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 1
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 2
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 3
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 4
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 5
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 6
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 7
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 8
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 9
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 10
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 11
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 12
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 13
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 14
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 15
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 16
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 17
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 18
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 19
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 20
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 21
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 22
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 23
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 24
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 25
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 26
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 27
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 28
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 29
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 30
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 31
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 32
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 33
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 34
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 35
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 36
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 37
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 38
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 39
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 40
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 41
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 42
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 43
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 44
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 45
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 46
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 47
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 48
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 49
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 50
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 51
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 52
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 53
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 54
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 55
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 56
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 57
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 58
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 59
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 60
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 61
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 62
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 63
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 64
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 65
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 66
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 67
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 68
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 69
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 70
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 71
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 72
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 73
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 74
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 75
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 76
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 77
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 78
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 79
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 80
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 81
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 82
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 83
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 84
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 85
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 86
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 87
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 88
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 89
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 90
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 91
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 92
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 93
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 94
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 95
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 96
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 97
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 98
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 99
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 100
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 101
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 102
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 103
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 104
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 105
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 106
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 107
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 108
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 109
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 110
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 111
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 112
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 113
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 114
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 115
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 116
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 117
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 118
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 119
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 120
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 121
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 122
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 123
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 124
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 125
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 126
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 127
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 128
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 129
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 130
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 131
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 132
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 133
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 134
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 135
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 136
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 137
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 138
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 139
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 140
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 141
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 142
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 143
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 144
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 145
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 146
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 147
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 148
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 149
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 150
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 151
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 152
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 153
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 154
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 155
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 156
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 157
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 158
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 159
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 160
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 161
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 162
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 163
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 164
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 165
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 166
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 167
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 168
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 169
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 170
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 171
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 172
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 173
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 174
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 175
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 176
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 177
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 178
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 179
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 180
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 181
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 182
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 183
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 184
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 185
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 186
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 187
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 188
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 189
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 190
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 191
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 192
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 193
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 194
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 195
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 196
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 197
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 198
+    },
+    {
+      "mode": "n2",
+      "cohort": "adni",
+      "replicate": 199
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 0
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 1
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 2
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 3
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 4
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 5
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 6
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 7
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 8
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 9
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 10
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 11
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 12
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 13
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 14
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 15
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 16
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 17
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 18
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 19
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 20
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 21
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 22
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 23
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 24
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 25
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 26
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 27
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 28
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 29
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 30
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 31
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 32
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 33
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 34
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 35
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 36
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 37
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 38
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 39
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 40
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 41
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 42
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 43
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 44
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 45
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 46
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 47
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 48
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 49
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 50
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 51
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 52
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 53
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 54
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 55
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 56
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 57
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 58
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 59
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 60
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 61
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 62
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 63
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 64
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 65
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 66
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 67
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 68
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 69
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 70
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 71
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 72
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 73
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 74
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 75
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 76
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 77
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 78
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 79
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 80
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 81
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 82
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 83
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 84
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 85
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 86
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 87
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 88
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 89
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 90
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 91
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 92
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 93
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 94
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 95
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 96
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 97
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 98
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 99
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 100
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 101
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 102
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 103
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 104
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 105
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 106
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 107
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 108
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 109
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 110
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 111
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 112
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 113
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 114
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 115
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 116
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 117
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 118
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 119
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 120
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 121
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 122
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 123
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 124
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 125
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 126
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 127
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 128
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 129
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 130
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 131
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 132
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 133
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 134
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 135
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 136
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 137
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 138
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 139
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 140
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 141
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 142
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 143
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 144
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 145
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 146
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 147
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 148
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 149
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 150
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 151
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 152
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 153
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 154
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 155
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 156
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 157
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 158
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 159
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 160
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 161
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 162
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 163
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 164
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 165
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 166
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 167
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 168
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 169
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 170
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 171
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 172
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 173
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 174
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 175
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 176
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 177
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 178
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 179
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 180
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 181
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 182
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 183
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 184
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 185
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 186
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 187
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 188
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 189
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 190
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 191
+    }
+  ],
+  [
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 192
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 193
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 194
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 195
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 196
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 197
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 198
+    },
+    {
+      "mode": "n2",
+      "cohort": "nacc",
+      "replicate": 199
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 0
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 1
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 2
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 3
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 4
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 5
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 6
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 7
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 8
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 9
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 10
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 11
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 12
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 13
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 14
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 15
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 16
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 17
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 18
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 19
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 20
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 21
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 22
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 23
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 24
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 25
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 26
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 27
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 28
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 29
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 30
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 31
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 32
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 33
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 34
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 35
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 36
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 37
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 38
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 39
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 40
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 41
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 42
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 43
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 44
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 45
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 46
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 47
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 48
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 49
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 50
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 51
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 52
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 53
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 54
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 55
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 56
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 57
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 58
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 59
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 60
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 61
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 62
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 63
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 64
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 65
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 66
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 67
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 68
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 69
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 70
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 71
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 72
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 73
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 74
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 75
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 76
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 77
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 78
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 79
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 80
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 81
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 82
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 83
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 84
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 85
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 86
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 87
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 88
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 89
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 90
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 91
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 92
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 93
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 94
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 95
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 96
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 97
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 98
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 99
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 100
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 101
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 102
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 103
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 104
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 105
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 106
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 107
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 108
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 109
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 110
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 111
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 112
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 113
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 114
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 115
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 116
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 117
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 118
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 119
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 120
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 121
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 122
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 123
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 124
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 125
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 126
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 127
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 128
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 129
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 130
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 131
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 132
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 133
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 134
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 135
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 136
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 137
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 138
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 139
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 140
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 141
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 142
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 143
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 144
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 145
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 146
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 147
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 148
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 149
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 150
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 151
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 152
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 153
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 154
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 155
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 156
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 157
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 158
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 159
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 160
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 161
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 162
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 163
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 164
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 165
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 166
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 167
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 168
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 169
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 170
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 171
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 172
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 173
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 174
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 175
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 176
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 177
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 178
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 179
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 180
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 181
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 182
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 183
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 184
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 185
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 186
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 187
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 188
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 189
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 190
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 191
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 192
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 193
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 194
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 195
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 196
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 197
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 198
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "adni",
+      "replicate": 199
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 0
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 1
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 2
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 3
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 4
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 5
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 6
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 7
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 8
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 9
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 10
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 11
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 12
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 13
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 14
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 15
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 16
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 17
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 18
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 19
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 20
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 21
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 22
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 23
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 24
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 25
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 26
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 27
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 28
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 29
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 30
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 31
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 32
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 33
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 34
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 35
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 36
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 37
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 38
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 39
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 40
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 41
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 42
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 43
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 44
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 45
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 46
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 47
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 48
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 49
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 50
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 51
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 52
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 53
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 54
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 55
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 56
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 57
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 58
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 59
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 60
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 61
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 62
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 63
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 64
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 65
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 66
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 67
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 68
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 69
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 70
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 71
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 72
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 73
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 74
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 75
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 76
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 77
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 78
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 79
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 80
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 81
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 82
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 83
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 84
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 85
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 86
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 87
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 88
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 89
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 90
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 91
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 92
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 93
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 94
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 95
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 96
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 97
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 98
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 99
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 100
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 101
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 102
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 103
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 104
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 105
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 106
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 107
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 108
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 109
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 110
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 111
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 112
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 113
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 114
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 115
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 116
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 117
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 118
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 119
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 120
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 121
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 122
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 123
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 124
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 125
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 126
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 127
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 128
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 129
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 130
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 131
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 132
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 133
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 134
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 135
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 136
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 137
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 138
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 139
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 140
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 141
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 142
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 143
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 144
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 145
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 146
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 147
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 148
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 149
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 150
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 151
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 152
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 153
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 154
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 155
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 156
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 157
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 158
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 159
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 160
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 161
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 162
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 163
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 164
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 165
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 166
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 167
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 168
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 169
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 170
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 171
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 172
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 173
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 174
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 175
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 176
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 177
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 178
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 179
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 180
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 181
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 182
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 183
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 184
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 185
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 186
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 187
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 188
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 189
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 190
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 191
+    }
+  ],
+  [
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 192
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 193
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 194
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 195
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 196
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 197
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 198
+    },
+    {
+      "mode": "bootstrap",
+      "cohort": "nacc",
+      "replicate": 199
+    }
+  ]
+]

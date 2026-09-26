@@ -4,7 +4,6 @@
  "rule": "le",
  "permutation_batch": 8,
  "fit_timeout_s": 600,
- "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
  "fast_likelihood": true,
  "paired_standard": false,
  "run_id": "method_pair_complete_a",
@@ -52,5 +51,5 @@
  },
  "bperm": 599,
  "full_p_first_n": 0,
- "purpose": "Second confirmation protocol: pair-restricted (D-pair) test on the composition-invariant estimator under the complete null at the ADNI composition; same datasets (seeds 53.1M) as method_calibration_a so D-all and D-pair are paired."
+ "purpose": "CONCORD (invariant_min) with pairwise within-diagnosis permutation of each pair of groups (599 relabelings; the third group keeps its labels), different composition and no true difference; the same datasets as method_calibration_a. Used in Supplementary Fig. 1a."
 }

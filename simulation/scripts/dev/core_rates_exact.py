@@ -1,7 +1,15 @@
-"""Family-wise and max rejection under the frozen rule with EXACT decisions (early-determined
-rejects included), vs the 'full-budget-only' convention, per cell x engine x scheme."""
-import json, glob, math, sys, collections
-root = 'runs/v2/hpc_results'; run = sys.argv[1] if len(sys.argv) > 1 else 'confirm_core_a'
+"""Family-wise and max-statistic rejection rates of one run (default confirm_core_a) with exact
+decisions, which include rejections determined before all B = 599 relabelings were run, next to
+the rates that count a rejection only at the full budget; per cell x engine x scheme.
+
+Published output: for confirm_core_a, cell REF_H0, engine repaired (separately fitted DEBM), the
+exact family-wise counts of schemes unrestricted and diagnosis are the "Standard" rows of
+figures/inputs/simulation/fig2_calibration.csv (Fig. 3a). The printed table itself is not
+published; figures/inputs/simulation/rates_exact_final.txt keeps only blocks of
+rates_exact_all.py.
+"""
+import json, glob, math, os, sys, collections
+root = os.environ.get('CONCORD_RUNS_DIR', 'runs'); run = sys.argv[1] if len(sys.argv) > 1 else 'confirm_core_a'
 B, PT, MT = 599, 10, 30
 def wilson(k, n, z=1.96):
     if n == 0: return (float('nan'),)*3

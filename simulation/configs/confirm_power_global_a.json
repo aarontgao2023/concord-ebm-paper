@@ -6,9 +6,6 @@
   "permutation_batch": 8,
   "full_p_first_n": 10,
   "fit_timeout_s": 300,
-  "stop_file": "/N/slate/tg11/ebmcal_v2/STOP",
-  "full_p_policy": "Preselected first ten seeds are execution/tie diagnostics only; no population p-distribution or p-shift claim from ten datasets.",
-  "failure_policy": "Preserve all planned datasets and unsuccessful fits. Unknown planned outcomes may yield exact decisions via fixed-budget bounds; never change denominator to successful fits.",
   "run_id": "confirm_power_global_a",
   "base_seed": 42200000,
   "datasets": 500,
@@ -29,19 +26,6 @@
       "require_max": true
     }
   },
-  "primary_endpoint": "Global-max detection probability in the exact-K27 alternative family, separately for small-group e2 and large-group e4 alternatives. No claim of no power cost, equal-size superiority, or pairwise strong FWER.",
-  "geometry_policy": "Uniform relative permutations with exactly 27 inversions among 14 events; every realized inversion count must equal 27.",
   "fast_likelihood": true,
-  "execution_implementation": "Direct normal-PDF objective changes only distribution-object construction. Enable after HPC full optimizer/mixture/output exact-equivalence checks and same-seed B3 batch bridge; original/repaired share mixture only within a single identical-input job.",
-  "configuration_status": "frozen_for_independent_confirmation",
-  "freeze_utc": "2026-09-08T14:43:39.441270+00:00",
-  "freeze_policy": "Immutable source/config snapshot created before any42xxxxxx confirmation data are generated. Earlier41xxxxxx structural-preflight data are excluded. Changes prompted by confirmation outcomes require a new candidate and fresh seeds.",
-  "confirmation_namespace": "42xxxxxx",
-  "confirmation_gate_evidence": [
-    "results/v2_dev_estimated_prior_a/estimated_prior_analysis.json",
-    "results/v2_dev_paired_bridge_a/bridge_comparison.json",
-    "results/v2_dev_fast_bridge_a/bridge_comparison.json",
-    "results/v2_fast_likelihood_validation/fast_likelihood_hpc_observed.json",
-    "results/v2_fast_likelihood_validation/fast_likelihood_hpc_permuted.json"
-  ]
+  "purpose": "Separately fitted DEBM (repaired) with within-diagnosis permutation when the CN-heavy (PWR_E2_K27) or AD-heavy (PWR_E4_K27) group has 27 of its 91 event pairs reversed. These datasets are the base datasets of the two paired-benchmark conditions with 27 reversed pairs (Fig. 3c,d; Supplementary Table 2), in which all three DEBM variants were refitted."
 }

@@ -1,0 +1,20 @@
+
+=== A poorly separable (AUC .76), B sharp (.96), C middling (.86); common measurement model, mixing weight 0.5
+per-stage minimiser: {0: 'A<C<B', 1: 'A<C<B', 2: 'B<A<C', 3: 'B<C<A'}
+stage 0 losses: {'A<B<C': np.float64(0.354), 'A<C<B': np.float64(0.1977), 'B<A<C': np.float64(0.5991), 'B<C<A': np.float64(0.6879), 'C<A<B': np.float64(0.2865), 'C<B<A': np.float64(0.5316)}
+stage 3 losses: {'A<B<C': np.float64(0.5318), 'A<C<B': np.float64(0.687), 'B<A<C': np.float64(0.2871), 'B<C<A': np.float64(0.1977), 'C<A<B': np.float64(0.5976), 'C<B<A': np.float64(0.3529)}
+composition sweep (w over stages 0..3):
+  late fraction 0.00: target A<C<B   (objective 0.1674; truth A<B<C costs 0.3235)
+  late fraction 0.35: target A<B<C   (objective 0.3698; truth A<B<C costs 0.3698)
+  late fraction 0.60: target B<A<C   (objective 0.3867; truth A<B<C costs 0.4029)
+  e2 composition: target A<C<B  losses {'A<B<C': np.float64(0.3524), 'A<C<B': np.float64(0.2921), 'B<A<C': np.float64(0.5541), 'B<C<A': np.float64(0.6955), 'C<A<B': np.float64(0.4335), 'C<B<A': np.float64(0.6352)}
+  e4 composition: target B<A<C  losses {'A<B<C': np.float64(0.3892), 'A<C<B': np.float64(0.5368), 'B<A<C': np.float64(0.3809), 'B<C<A': np.float64(0.5203), 'C<A<B': np.float64(0.6762), 'C<B<A': np.float64(0.6679)}
+
+=== equal separability (AUC .86); common measurement model, mixing weight 0.5
+per-stage minimiser: {0: 'A<B<C', 1: 'A<B<C', 2: 'A<B<C', 3: 'C<A<B'}
+stage 0 losses: {'A<B<C': np.float64(0.4042), 'A<C<B': np.float64(0.4043), 'B<A<C': np.float64(0.4042), 'B<C<A': np.float64(0.4044), 'C<A<B': np.float64(0.4045), 'C<B<A': np.float64(0.4045)}
+stage 3 losses: {'A<B<C': np.float64(0.4043), 'A<C<B': np.float64(0.404), 'B<A<C': np.float64(0.4046), 'B<C<A': np.float64(0.4045), 'C<A<B': np.float64(0.4039), 'C<B<A': np.float64(0.4041)}
+composition sweep (w over stages 0..3):
+  late fraction 0.00: target A<B<C   (objective 0.3206; truth A<B<C costs 0.3206)
+  e2 composition: target A<B<C  losses {'A<B<C': np.float64(0.3298), 'A<C<B': np.float64(0.3634), 'B<A<C': np.float64(0.4318), 'B<C<A': np.float64(0.5675), 'C<A<B': np.float64(0.499), 'C<B<A': np.float64(0.6011)}
+  e4 composition: target A<B<C  losses {'A<B<C': np.float64(0.2944), 'A<C<B': np.float64(0.407), 'B<A<C': np.float64(0.3819), 'B<C<A': np.float64(0.582), 'C<A<B': np.float64(0.6072), 'C<B<A': np.float64(0.6947)}
